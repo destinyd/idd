@@ -1,8 +1,7 @@
 Cms::Application.routes.draw do
-  authenticated :user do
-    root :to => 'home#index'
-  end
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   root :to => "home#index"
-  devise_for :users
-  resources :users
+  ActiveAdmin.routes(self)
+  get ':path', to: 'pages#show', as: 'page'
 end
