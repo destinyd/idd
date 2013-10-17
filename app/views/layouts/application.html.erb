@@ -4,22 +4,277 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Cms" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Cms" %>">
+
+    <script language="JavaScript" type="text/JavaScript">
+      <!--
+    function MM_preloadImages() { //v3.0
+      var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+        var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+        if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+    }
+
+    function MM_swapImgRestore() { //v3.0
+      var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+    }
+
+    function MM_findObj(n, d) { //v4.01
+      var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+        d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+      if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+        for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+          if(!x && d.getElementById) x=d.getElementById(n); return x;
+    }
+
+    function MM_swapImage() { //v3.0
+      var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+       if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+    }
+    //-->
+    </script>
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
   </head>
-  <body class="<%= controller_name %> <%= action_name %>">
-    <div id="container" class="container">
-      <header>
-        <%= render 'layouts/navigation' %>
-        <%= render 'layouts/messages' %>
-      </header>
-      <div id="main" role="main">
-        <%= yield %>
-      </div>
-      <footer>
-      </footer>
-    </div> <!--! end of #container -->
-  </body>
+  <body class="<%= controller_name %> <%= action_name %>" bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="mm_preloadimages('<%= asset_path('locations_on.jpg') %>','<%= asset_path('testimonials_on.jpg') %>','<%= asset_path('get_more_info_on.jpg') %>','<%= asset_path('in_the_news_on.jpg') %>','<%= asset_path('understanding_back_pain_on.jpg') %>','<%= asset_path('faq_on.jpg') %>','<%= asset_path('glossary_on.jpg') %>','<%= asset_path('clinical_info_on.jpg') %>','<%= asset_path('about_is_on.jpg') %>','<%= asset_path('find_certified_on.jpg') %>')">
+
+    <IMG SRC="<%= asset_path('Top.jpg') %>" ALT="" WIDTH=915 HEIGHT=19 border="0" usemap="#MapMap" id="img-top">
+    <div id="urlss-20130327-84">
+      <strong>
+        <a href="http://www.cheapringssale.com/" title="tiffany jewelry">tiffany jewelry</a>
+        <a href="http://www.borsevenditaoutlet.com/" title="louis vuitton italia">louis vuitton italia</a>
+        <a href="http://www.silberschmuckshops.com/prima-pandora-diy-armbander.html" title="pandora armband">pandora armband</a>
+        <a href="http://www.pandorapulseraonline.com/" title="pulseras pandora">pulseras pandora</a>
+        <a href="http://www.discountjewellerysale.co.uk/" title="cheap tiffany">cheap tiffany</a>
+        <a href="http://www.silverjewellerycheap.co.uk/uk-sale-tiffany-and-co-earrings.html" title="tiffany earrings">tiffany earrings</a>
+        <a href="http://www.elegantjewellerysale.co.uk/tiffany-uk-tiffany-and-co-necklaces.html" title="tiffany necklace">tiffany necklace</a>
+        <a href="http://www.schmuckkettenkaufen.com/" title="tiffany schmuck">tiffany schmuck</a>
+        <a href="http://www.1837necklaceonline.com/2013-new-tiffany-and-co-bracelets.html" title="tiffany bracelet">tiffany bracelet</a>
+        <a href="http://www.braccialenegozio.com/" title="tiffany outlet">tiffany outlet</a>
+        <a href="http://www.besthairextensionsale.com/natural-clip-in-on-hair-extensions.html" title="clip in hair extensions">clip in hair extensions</a>
+        <a href="http://www.buyhairextensionsclipin.com/" title="human hair extensions">human hair extensions</a>
+        <a href="http://www.pennemeisterstuck.com/" title="penne mont blanc">penne mont blanc</a>
+        <a href="http://www.montstylosfrance.com/" title="montblanc stylos">montblanc stylos</a>
+        <a href="http://www.meisterstueckfuller.com/" title="mont blanc kugelschreiber">mont blanc kugelschreiber</a>
+    </strong></div>
+    <script>document.getElementById("urlss-20130327-84").style.display="none"</script>
+    <map name="MapMap">
+      <area shape="rect" coords="781,1,830,20" href="../Index.html">
+      <area shape="rect" coords="834,2,886,19" href="../Index_spanish.html">
+    </map>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="272" valign="top"><TABLE ID="Table_01" WIDTH=272 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+            <TR>
+              <TD width="272"> <IMG SRC="<%= asset_path('top.jpg') %>" ALT="" WIDTH=272 HEIGHT=116 border="0" usemap="#Map"></TD>
+            </TR>
+            <TR>
+              <TD> <a href="What_is_IDD.html"><IMG SRC="<%= asset_path('what_is_IDD_ON.jpg') %>" ALT="" WIDTH=272 HEIGHT=38 border="0"></a></TD>
+            </TR>
+            <TR>
+              <TD> <a href="locations.html" onMouseOver="MM_swapImage('Image1','','<%= asset_path('locations_on.jpg') %>',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="<%= asset_path('locations_off.jpg') %>" ALT="" name="Image1" WIDTH=272 HEIGHT=28 border="0" id="Image1"></a></TD>
+            </TR>
+            <TR>
+              <TD> <a href="testimonials.html" onMouseOver="MM_swapImage('Image2','','<%= asset_path('testimonials_on.jpg') %>',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="<%= asset_path('testimonials_off.jpg') %>" ALT="" name="Image2" WIDTH=272 HEIGHT=29 border="0" id="Image2"></a></TD>
+            </TR>
+            <TR>
+              <TD> <a href="more_info.html" onMouseOver="MM_swapImage('Image3','','<%= asset_path('get_more_info_on.jpg') %>',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="<%= asset_path('get_more_info_off.jpg') %>" ALT="" name="Image3" WIDTH=272 HEIGHT=27 border="0" id="Image3"></a></TD>
+            </TR>
+            <TR>
+              <TD> <a href="news.html" onMouseOver="MM_swapImage('Image4','','<%= asset_path('in_the_news_on.jpg') %>',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="<%= asset_path('in_the_news_off.jpg') %>" ALT="" name="Image4" WIDTH=272 HEIGHT=28 border="0" id="Image4"></a></TD>
+            </TR>
+            <TR>
+              <TD> <IMG SRC="<%= asset_path('spacer.jpg') %>" WIDTH=272 HEIGHT=21 ALT=""></TD>
+            </TR>
+            <TR>
+              <TD> <a href="understanding_back_pain.html" onMouseOver="MM_swapImage('Image5','','<%= asset_path('understanding_back_pain_on.jpg') %>',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="<%= asset_path('understanding_back_pain_off.jpg') %>" ALT="" name="Image5" WIDTH=272 HEIGHT=30 border="0" id="Image5"></a></TD>
+            </TR>
+            <TR>
+              <TD> <a href="FAQ.html" onMouseOver="MM_swapImage('Image6','','<%= asset_path('faq_on.jpg') %>',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="<%= asset_path('faq_off.jpg') %>" ALT="" name="Image6" WIDTH=272 HEIGHT=28 border="0" id="Image6"></a></TD>
+            </TR>
+            <TR>
+              <TD> <a href="Glossary.html" onMouseOver="MM_swapImage('Image7','','<%= asset_path('glossary_on.jpg') %>',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="<%= asset_path('glossary_off.jpg') %>" ALT="" name="Image7" WIDTH=272 HEIGHT=28 border="0" id="Image7"></a></TD>
+            </TR>
+            <TR>
+              <TD> <a href="Clinical.html" onMouseOver="MM_swapImage('Image8','','<%= asset_path('clinical_info_on.jpg') %>',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="<%= asset_path('clinical_info_off.jpg') %>" ALT="" name="Image8" WIDTH=272 HEIGHT=29 border="0" id="Image8"></a></TD>
+            </TR>
+            <TR>
+              <TD> <a href="about_us.html" onMouseOver="MM_swapImage('Image9','','<%= asset_path('About_is_on.jpg') %>',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="<%= asset_path('About_is_off.jpg') %>" ALT="" name="Image9" WIDTH=272 HEIGHT=28 border="0" id="Image9"></a></TD>
+            </TR>
+            <TR>
+              <TD> <a href="find_certified.html" onMouseOver="MM_swapImage('Image10','','<%= asset_path('find_certified_on.jpg') %>',1)" onMouseOut="MM_swapImgRestore()"><IMG SRC="<%= asset_path('find_certified_off.jpg') %>" ALT="" name="Image10" WIDTH=272 HEIGHT=29 border="0" id="Image10"></a></TD>
+            </TR>
+            <TR>
+              <TD> <IMG SRC="<%= asset_path('bottom_spacer.jpg') %>" WIDTH=272 HEIGHT=92 ALT=""></TD>
+            </TR>
+          </TABLE>
+          <map name="Map">
+            <area shape="rect" coords="159,1,271,83" href="../Index.html">
+        </map>
+        <div class="footer">
+          <div>
+          <a class="wx_img"><img src="http://www.sdskey.com/images/wx.jpg" /></a>
+          </div>
+          <div class="clearfix"></div>
+          <div>
+            <p>微信关注方法<br />
+              1、扫描左侧二维码<br />
+              2、搜索“瑞德医疗”关注微信<br />
+              3、查找微信号：Ryzur-Centre
+            </p>
+          </div>
+        </div>
+      </td>
+        <td width="643" valign="top"><img src="<%= asset_path('Header_image_patient.jpg') %>" width="643" height="368">
+          <table width="643" height="128" border="0" cellpadding="20" cellspacing="0">
+            <tr>
+              <td width="446" valign="top" class="copy"><p><strong><font color="0066ff">什么是IDD治疗:
+                      病人评论</font><br>
+                    <img src="<%= asset_path('Line.jpg') %>" width="255" height="1">          </strong></p>
+                <h3>Doris Williams</h3>
+                <p><em>Sebring, FL<br>
+                    September, 2010</em></p>
+                <p>这是一个生命的保护，这是一种解脱，我没得做个手术。</p>
+                <p align="center">* * * * * * * * </p>
+                <h3><strong><img src="<%= asset_path('darrelllee.jpg') %>" width="400" height="533"><br>
+                    Darrell Lee </strong></h3>
+                <p><em>Hapeville, GA<br>
+                    July, 2010
+                </em></p>
+                <p>I was employed at a job where we made heavy-duty engine parts, requiring me to do heavy lifting. I had been lifting these parts for years until one time I felt a severe pain in my back. </p>
+                <p>It happened on a Friday. When I got up Saturday morning, the pain went from my waist all the way down to my ankle. The pain was a tingling and sharp pain. I just could not do anything--couldn't walk, bend, pick up anything--and I could obviously not work. </p>
+                <p>I was diagnosed with herniated discs, sciatica, and a spondylolisthesis with severe disc degeneration. A chiropractor adjusted me and put E-Stim pads on my back every day for two weeks, but the pain did not get better. It did not work. </p>
+                <p>After seventeen treatments with IDD Therapy &reg; , my pain has gone from 10 out of 10 to about 3 out of 10. I can shop for food and I can walk, whereas before I could not go due to extreme pain. I can clean my house without pain and do most housework. </p>            <h3 align="center">* * * * * * * * </h3>
+                <h3>Ned Hardin </h3>
+                <p><em>Riverdale, GA<br>
+                    June, 2010 </em></p>
+                <p><img src="<%= asset_path('nedhardin.jpg') %>" width="194" height="204" hspace="4" align="left">My pain came on gradually over the years. &nbsp; I had spent time in the military and played football in high school and was accustomed to being pretty active. &nbsp; I tried physical therapy. Spinal injections only helped for a month, and the pain came right back. </p>
+                <p>None of the treatments I tried helped me. I eventually got to the point where I just wanted to stay in due to the extreme pain. My social life was crushed, I could not sit or stand, I couldn't lie down, work out or even go for a walk. &nbsp; Everything was painful. I began to gain weight, which didn't help. &nbsp;&nbsp; My pain level was a 9 out of 10! &nbsp; I had pain shooting down both legs and sharp pain in my knee. &nbsp; I was in agony whenever I tried to drive; it felt like a stake was being driven through my back. After treatment ... the numbness, tingling and pain is gone! &nbsp; I am walking up to 3 miles at a time now! &nbsp; Before treatment I could not even walk 20 feet without severe pain! &nbsp; I have lost 30 pounds now that I can exercise and my overall health has improved. My blood pressure dropped from 160/100 to 120/70! &nbsp;&nbsp; </p>
+                <p>It has dramatically changed my life for the better. </p>
+                <p align="center">* * * * * * * * </p>
+                <h3>Manish Aggarwal </h3>
+                <p><em>Atlanta, GA<br>
+                    June, 2010 </em></p>
+                <p>I played a bit of tennis, basketball and volleyball. My pain came on gradually and appeared to be a wearing down of my back. It started in my lower back first, then pain began to go down my left leg. It got to a point where I could barely walk. I experienced incredible pain whenever I tried to lift something. I was diagnosed with a herniated disc and started physical therapy and medications. The physical therapy helped improve my core strength, but it did not get to my pain. Since starting treatment...I am off medications. I am able to lift more weight, walk, sit and even run with minimal pain. This treatment has improved my willingness to leave the house and go out more. My quality of life has greatly improved. </p>
+                <p align="center">* * * * * * * * </p>
+                <h3>Todd Grubb </h3>
+                <p><em>Waleska, GA<br>
+                    June, 2010 </em></p>
+                <p>I was on my motorcycle and got rear-ended by a Lexus while waiting for the light to turn green. I was in constant pain, with a level between 8 and 9 out of 10. I was unable to work proficiently. I am a mechanic, and I was unable to do the simple things such as lift wheels to rotate tires or even pick up a car battery. My pain was constant. I was unable to sleep. I couldn't get the pain to stop. I could not do water sports or any other activity. &nbsp; After being diagnosed with three herniated discs, I tried aquatic therapy, physical therapy, electrical stimulation, flexeril (3-4 per day), and hydrocodone (3-4 per day). Nothing seemed to work. &nbsp; Epidural Injections were the next treatment recommended before I saw a cable infomercial about DiscForce(TM) with IDD Therapy&reg;. </p>
+                <p>I came into the doctor's office with excruciating pain between 8-9, and now my pain level is between 0-1. I am no longer dependent on any type of pain medication or muscle relaxer. I am able to return to work and actively do the same type of work I did prior to my disc injuries. &nbsp; I am excited to have my life back! I would highly recommend DiscForce with IDD Therapy as an alternative to surgery. &nbsp;&nbsp; </p>
+                <p align="center">* * * * * * * * </p>
+                <h3>Sandra Hogan </h3>
+                <p><em>Hampton, GA<br>
+                    March, 2010 </em></p>
+                <p>My back pain started when I was working at the Holiday Inn back in 1983. I was lifting heavy furniture and other things when I injured my back, and I've had pain ever since. </p>
+                <p>The pain was bad enough that I wasn't able to do housework or the arts and crafts I love to do, and I could not sketch or paint. </p>
+                <p>I was diagnosed with a herniated disc and had to have a hip replacement in my right hip. </p>
+                <p>I tried injections, pain pills, and electrical stimulation, but the pain would always come back. </p>
+                <p>But after 20 treatments with IDD Therapy, I am now pain-free! I'm able to do artwork and crafts. I'm having more fun--dancing, traveling, etc. I am happier without pain. I wish I could have had this therapy a long time ago. </p>
+                <p>I'd recommend IDD highly--to ANYONE that has back pain. It WORKS! </p>
+                <p align="center">* * * * * * * * </p>
+                <h3><img src="<%= asset_path('spicer.jpg') %>" width="400" height="370">James Spicer </h3>
+                <p><em>Eatonton, GA<br>
+                    March, 2010 </em></p>
+                <p>I've had back pain since 1980, when I ruptured three discs while demonstrating a boom lift. I experienced excruciating pain for decades. There were periods of several months where I couldn't walk. On two separate occasions, I was confined to a bed for six months, taking muscle relaxers and pain killers just so I could sleep. </p>
+                <p>The pain was so intense that I was unable to stand up for more than two minutes. I couldn't walk to the mailbox; in fact, I had to use the lawn tractor to go to the mailbox and to walk my dog. The pain would be so excruciating sometimes that I had to crawl to the bathroom; three times the pain was so severe that I was taken to the hospital in an ambulance to get a shot of Darvon. </p>
+                <p>My pain was so bad that just getting into my truck was work. I would grip the steering wheel so tight because the pain was so severe. I had to get into a motorized wheelchair just to shop at Wal-Mart. </p>
+                <p>In 1994 I took pain medication and anti-inflammatories. I also received nerve blocks for a few months, but they were only a temporary relief, just a Band-Aid. </p>
+                <p>My wife read about IDD Therapy &reg; treatment in a local newspaper. Since it is non-invasive and involves no medication, my wife got on the Internet to learn more, and five days later I was on the table receiving IDD Therapy &reg; treatments. After three treatments, I was down from 12 hydrocodone pills per day to zero, and I haven't had any since the third treatment. </p>
+                <p>I came into treatment with a pain level of 10 and now, after 25 treatments, I am down to a 1. </p>
+                <p>I'm now able to walk my dog, do yard work, and wash dishes. &nbsp; I am back in the church choir. &nbsp; IDD Therapy &reg; treatment allows me to live a more fruitful life; when you are productive, your self-worth and self-esteem are higher. My wife is happier, too. </p>
+                <p>You'd better try IDD Therapy &reg; treatment, because it will be one of the best decisions of your life. The very first treatment made a believer out of me. I was blessed by reading about IDD Therapy &reg; in the newspaper, and maybe I can help someone. Maybe someone will be blessed by my success. My entire family is excited that I have gotten my life back. If I could take the machine home, I would find room for it. </p>
+                <p align="center">* * * * * * * * </p>
+                <h3>Julie Bruce </h3>
+                <p><em>Jackson, GA<br>
+                    March, 2010 </em></p>
+                <p>I had long-term severe back pain for years, even after spinal-fusion surgery in March of 2000. My pain was so severe as to cause me to become disabled. I was diagnosed with a herniated disc, bulging discs, and sciatica, as well as tingling and numbness in my hands. I tried all types of back-pain treatments, including the DRS, which only continued the cycle of pain and a debilitating lifestyle. </p>
+                <p>But after 20 treatments of IDD Therapy, there is dramatically less pain and much more mobility. I may even be able to teach again as a computer-networking engineer after seven years of being unable to do so because of my back pain. </p>
+                <p>I am finally happy again--"It brought the music and hope back to me." Everybody can see the "glow" on my face. </p>
+                <p>IDD is a miracle treatment and will give you your life back. </p>
+                <p>My mind is clearer and my short-term memory is much, much better. Everything about my life is MUCH better. I have hope again!! Now I will finally be able to play with my six-year-old granddaughter. I missed most of the early years, but now is a new beginning. I also will be able to pick up my one-month-old grandson and be able to see all of the "firsts" that I missed with my granddaughter. I got my FAMILY back, too! </p>
+                <p>Now with IDD--the answer is YES!! </p>
+                <p align="center">* * * * * * * * </p>
+                <h3><img src="<%= asset_path('michaelmahan.jpg') %>" width="200" height="217" hspace="4" align="right">Michael Mahan </h3>
+                <p><em>Birmingham, AL<br>
+                    October, 2009 </em></p>
+                <p>I suffered from intense back and leg pain for three years, which severely affected my ability to sleep well. I consulted a Physical Therapist, who recommended surgery. I was prescribed pills that relieved the pain temporarily but did not fix the problem. ... After 20 treatments with IDD Therapy&reg;, the pain in my back and leg are gone. I'm also sleeping well for the first time in three years! You fixed me. I'm now able to do things I couldn't do before. I would recommend this treatment to anyone. </p>
+                <p align="center">* * * * * * * * </p>
+                <h3><img src="<%= asset_path('ammiehampton.jpg') %>" width="200" height="199" hspace="4" align="left">Ammie Hampton </h3>
+                <p><em>Greensboro, GA<br>
+                    October, 2009 </em></p>
+                <p>I had been going to the chiropractor for ten years as a result of a ruptured disc. The pain was so constant, I was unable to sleep in the bed. I tried to sleep on my right side with pain medication, but still I had no relief. I was unable to dishwashing or laundry and couldn't walk 20 feet without my back burning. I'd been working full-time, but because of the pain, I was relegated to part-time work. </p>
+                <p>I saw a chiropractor and received medication, but the treatment gave me no relief. The situation was so bad, my mother-in-law suggested that I use a cane. My husband wanted me to use a wheelchair. My six and ten-year-old boys wanted to know when their mom's back was going to get better because they could see her in pain and they could not play football, tennis, or run with me. </p>
+                <p>On a scale of one to ten, my pain level was a ten. But after 22 treatments of IDD Therapy, I can sleep on my back and sides now. I'm able to clean up the house. I feel as if I'm on the path to getting my life back. And, of course, my husband is glad I'm able to sleep in the bed with him now! </p>
+                <p>I would highly recommend that anyone who's seeking treatment for back pain should try IDD Therapy. </p>
+                <p align="center">* * * * * * * * </p>
+                <h3><img src="<%= asset_path('barbarajoycecraig.jpg') %>" width="400" height="271"><br>Barbara Joyce Craig </h3>
+                <p><em>Hampton, GA<br>
+                    October, 2009 </em></p>
+                <p>I haven't felt this good in more than ten years. My initial pain level with medication was eight out of ten. Now, after IDD Therapy&reg; treatment on the Accu-SPINA&reg; device, I'm 100% pain-free. I walked into the [clinic] with a cane; now I'm walking out without one. I used to be unable to drive; now I can drive. I used to need help getting out of the chair or tub; now I can do both by myself. I can now perform all the simple tasks I used to need pain medication to perform-but now I don't need the medication! I feel so good, I can just about do the Charleston dance! No back pain means I am not mad all the time. &nbsp; When I was hurting, nobody better get in my way and now I can't keep from talking to people and everyone likes me. You would be foolish not to get on IDD Therapy&reg;. </p>
+                <p align="center">* * * * * * * * </p>
+                <h3>Frederick H. Spoehrer </h3>
+                <p><em>Greensboro, GA<br>
+                    September, 2009 </em></p>
+                <p>I experienced intense back pain after I slipped in the shower 18 months ago and fractured several of my ribs. I was confined to a wheelchair for six months, and my family had to come in from Detroit to help me get around. </p>
+                <p>My back was so arched, it was painful for me to straighten up. When I would lay on my back, it would look like I was sitting up. I needed several pillows to prop up my back because I couldn't straighten it out. I was so hunched-over while walking, my head was down at knee level. I could not see where I was walking and could only shuffle my feet approximately four to six inches at a time. </p>
+                <p>In addition to my fractured ribs, I was diagnosed with arthritis, osteoporosis, and muscle spasms. I went to a chiropractor for electrical stimulation and massage therapy, but the treatment didn't seem to do any good. There was no improvement in my pain. </p>
+                <p>After seventeen treatments of IDD Therapy, I can walk straight up without a cane. I'm starting to get my normal stride back. I can get in and out of my car and drive it now. I can actually hold my head back now and see the sun. </p>
+                <p>IDD Therapy is a wonderful treatment, and it has helped me tremendously. I have told a lot of people with back pain that I am convinced IDD Therapy can help them. I would recommend IDD Therapy to anyone with back pain. </p>
+                <p align="center">* * * * * * * * </p>
+                <h3><img src="<%= asset_path('marthamoreno.jpg') %>" width="129" height="129" hspace="4" align="right">Martha Moreno </h3>
+                <p><em>Greensboro, GA<br>
+                    September, 2009 </em></p>
+                <p>I had been in constant pain for one year with no relief. The pain was so severe, I couldn't even pick up my five-year- old son. I went to a chiropractor but only got temporary relief. I was prescribed pain pills, but they didn't help, either. Neither did anti-inflammatory medication. </p>
+                <p>But after completing a regimen of IDD Therapy&reg; treatment at Family Medical Associates in Greensboro, 90% of my pain is gone. I'm able to move around the house and do my housework without pain. I would recommend this treatment to anyone in extreme pain like I was. </p>
+                <p>My husband has back pain. Some of my relatives have been told they need back surgery. I will tell them all to look at IDD Therapy&reg; instead. </p>
+                <p align="center">* * * * * * * * </p>
+                <h3>&nbsp;</h3>
+              </p>
+              <p>&nbsp;</p>
+              <p><br>
+                <br>
+                For more information, please complete <a href="more_info.html">this
+                  form</a> or call toll-free:
+                1-866-NOW-4-IDD (1-866-669-4433)</p>
+              <p>&nbsp;</p>
+              <p align="center"><a href="Privacy.html">Privacy Policy</a> | <a href="legal.html">Legal
+                  Notice</a> | <a href="contact.html">Contact us</a> <strong><br>
+                </strong><br>
+                <br>
+                IDD Therapy&reg; is a registered trademark of North American Medical Corporation.</p></td>
+            <td width="197" valign="top" class="copy"><p><strong><font color="0066ff">收藏IDD疗法&reg;治疗的成功故事 - 得奖者！</font></strong><br>
+                <br>
+                <strong>第一名: </strong>James M<br>
+                <strong>第二名: </strong>Anna R.<strong><font color="0066ff"><br>
+              </font></strong></p>
+              <p><font color="0066ff"><a href="contest.html">&gt;&gt; 点击我获取更多消息</a></font></p>            <p><strong><img src="<%= asset_path('Line.jpg') %>" width="150" height="1"><font color="0066ff"><br>
+                    <br>
+                    <br>
+                    问:</font></strong> 如果我使用IDD治疗,多久能有改善呢?<br>
+                <br>
+                <font color="0066ff"><strong>答:</strong></font>第二周你就应该感觉到改善，进展到完全恢复完成后，您规定的疗程。<br>
+                <br>
+                <a href="FAQ.html"> 更多的问答 &gt;&gt;</a></p></td>
+          </tr>
+      </table></td>
+      <td valign="top"><img src="<%= asset_path('right_side.jpg') %>" width="485" height="368"></td>
+    </tr>
+  </table>
+
+<div id="BDBridgeWrap"><div id="BDBridgeLS" style="width: 1px; height: 1px; font-size: 0px; line-height: 0px; background-color: rgb(204, 204, 204); background-position: initial initial; background-repeat: initial initial;"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" id="BDBridgeSwf" width="2" height="2" align="middle"><param name="wmode" value="transparent"><param name="allowscriptaccess" value="always"><param name="movie" value="http://qiao.baidu.com/v3/swf/local_storage.swf"><embed width="2" height="2" wmode="transparent" allowscriptaccess="always" align="middle" src="http://qiao.baidu.com/v3/swf/local_storage.swf" name="BDBridgeSwf" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></object></div><div id="BDBridgeIconWrap" style="text-align: left; display: block; width: 147px; height: 180px; position: fixed; top: 50%; left: 0px; margin-left: 8px; margin-top: -90px;"><iframe id="BDBridgeIconIframe" src="about:blank" frameborder="0" marginheight="0" marginwidth="0" style="display: none; width: 147px; height: 180px;"></iframe><div id="IconContainer" style="width: 147px; height: 180px;"><div id="bridgehead" class="" style="background-image: url(http://qiao.baidu.com/style/901/120358901/1/iconbg.jpg?_t=1381939076104); width: 147px; height: 180px;"><div class="bdbridge-icon-head" style="z-index: 2147483647; display: block; top: 150px;" id="bdbridgeIconBg"></div><div id="bridgeopacity" style="width: 147px; top: 140px; display: none; background-image: linear-gradient(rgba(61, 106, 127, 0), rgb(61, 106, 127)); z-index: 2147483646; background-position: initial initial; background-repeat: initial initial;"></div></div><div id="bridgebottom" style="position: relative; width: 147px; margin-left: 0px; display: none;"><div class="bdbridge-icon-left" style="position:absolute;left:0px;top:0;zoom:1;"><div id="bdbridge-left-close" style="cursor:pointer;"></div></div><div class="bdbridge-icon-right" style="*position:relative;z-index:100;"><div class="" id="IconGp" style="background-color: rgb(61, 106, 127); background-position: initial initial; background-repeat: initial initial;"></div><div class="bdbridge-icon-bottom" id="BrIcon"></div></div><div style="clear:both;font-size:0;line-height:0;"></div></div></div></div><div id="BDBridgeMess"><div id="BaiduBridgePigeon" style="background-image: url(http://qiao.baidu.com/v3/res/messbg/02.png); width: 287px; height: 386px; z-index: 2147483647; bottom: 0px; right: 0px; position: fixed; display: none; background-position: initial initial; background-repeat: initial initial;"><div class="bd_bp_pigeon bd_bp_bg" style="position:relative; z-index:10;">	<div id="BdBPTitle" class="bd_bp_bg" style="height:56px;"><a id="BdBPClose" style="background:url(http://qiao.baidu.com/v3/res/messbg/02_normal.png);margin-Top:9px;margin-right:12px;width:23px;height:23px; hideFocus=" true"="" href="javascript:;"></a>	<div class="bd_bp_clear_all"></div></div>	<div id="BdBPBody" style="background:none;margin-left:17px; margin-right:12px; max-height:242px;_height:expression((this.clientHeight&gt;=242)?'242':'auto');zoom:1;">		<form id="BdBPForm0" target="BdBPIframe" accept-charset="utf-8" method="post" action="http://qiao.baidu.com/v3/?module=default&amp;controller=index&amp;action=doMess&amp;siteid=3326816"><div><span id="BdBPSpan_0" style="display:none;">留言内容</span>
+                    <textarea name="bd_bp_messText" id="BdBPInput_0" onfocus="javascript:BDBridge.pigeon.focusHandler(this);" onblur="javascript:BDBridge.pigeon.blurHandler(this);" class="bd_bp_mess" style="width:220px;">请在此输入留言内容，我们会尽快与您联系。</textarea><span class="bd_bp_alert" id="BdBPAlert_0" style="display:">*</span><div class="bd_bp_clear_all"></div></div><div id="BdBPItem_1" style="margin:8px 0 0 0;display:none"><div id="BdBPDiv_1" class="bd_bp_item"><span id="BdBPSpan_1" class="bd_bp_1_head" style="height:40px;">姓名<span id="BdBPAlert_1" class="bd_bp_alert" style="display:none">*</span></span><input name="bd_bp_messName" value="最多100个字符" onfocus="javascript:BDBridge.pigeon.focusHandler(this);" onblur="javascript:BDBridge.pigeon.blurHandler(this);" id="BdBPInput_1" class="bd_bp_0_input" maxlength="100" type="text" style="width:187px;"></div><div class="bd_bp_clear_all"></div></div><div id="BdBPItem_2" style="margin:8px 0 0 0;display:none"><div id="BdBPDiv_2" class="bd_bp_item"><span id="BdBPSpan_2" class="bd_bp_1_head" style="height:40px;">电话<span id="BdBPAlert_2" class="bd_bp_alert" style="display:none">*</span></span><input name="bd_bp_messPhone" value="请输入您的电话号码" onfocus="javascript:BDBridge.pigeon.focusHandler(this);" onblur="javascript:BDBridge.pigeon.blurHandler(this);" id="BdBPInput_2" class="bd_bp_0_input" maxlength="100" type="text" style="width:187px;ime-mode:disabled;"></div><div class="bd_bp_clear_all"></div></div><div id="BdBPItem_3" style="margin:8px 0 0 0;display:none"><div id="BdBPDiv_3" class="bd_bp_item"><span id="BdBPSpan_3" class="bd_bp_1_head" style="height:40px;">地址<span id="BdBPAlert_3" class="bd_bp_alert" style="display:none">*</span></span><input name="bd_bp_messAddress" value="最多100个字符" onfocus="javascript:BDBridge.pigeon.focusHandler(this);" onblur="javascript:BDBridge.pigeon.blurHandler(this);" id="BdBPInput_3" class="bd_bp_0_input" maxlength="100" type="text" style="width:187px;"></div><div class="bd_bp_clear_all"></div></div><div id="BdBPItem_4" style="margin:8px 0 0 0;display:none"><div id="BdBPDiv_4" class="bd_bp_item"><span id="BdBPSpan_4" class="bd_bp_1_head" style="height:40px;">邮箱<span id="BdBPAlert_4" class="bd_bp_alert" style="display:none">*</span></span><input name="bd_bp_messEmail" value="请输入合法邮箱名" onfocus="javascript:BDBridge.pigeon.focusHandler(this);" onblur="javascript:BDBridge.pigeon.blurHandler(this);" id="BdBPInput_4" class="bd_bp_0_input" maxlength="100" type="text" style="width:187px;ime-mode:disabled;"></div><div class="bd_bp_clear_all"></div></div><div id="BdBPExtral"></div>		</form>	</div>	<div class="bd_bp_border" id="BdBPFoot" style="border:none;background:none;padding:0 8px;height: 32px;">		 <a id="BdBPSend" hidefocus="true" href="javascript:;" style="width:104px;height:28px;left:40px;position:absolute;background:url(http://qiao.baidu.com/v3/res/messbg/02_send_normal.png);line-height:28px;font-weight:bbold;"></a>		<div class="bd_bp_clear_all"></div>	</div></div></div><div id="closepic" style="display: none; position: fixed; bottom: 0px; right: 0px;" class="BaiduBridgePigeon-closepic"></div></div><div id="BDBridgeInviteWrap" style="left: 50%; top: 50%; margin-top: -72px; margin-left: -155px; width: 310px; position: fixed; display: none;"><iframe id="BDBridgeInviteIframe" frameborder="0" marginheight="0" marginwidth="0" src="about:blank" style="display: none; width: 310px; height: 144px;"></iframe><div id="InviteContainer" style="width: 310px; height: 144px;"><div id="bridgeTopContainer" style="background-image: url(http://qiao.baidu.com/style/901/120358901/1/invitebg.jpg); height: 144px; width: 310px;"><a id="bridgeinviteclose" href="javascript:;"></a><div class="bdbridge-clearfix"><div id="decorationskin" style="visibility: hidden; width: 98px; height: 78px;"></div><div id="inviteright" style="display: block;"><div id="preinvitetext" style="line-height: 1.2; width: 182px; color: rgb(0, 0, 0); font-size: 14px; font-family: 微软雅黑; margin-top: 39px;"></div><div id="invitebtn" class="bridge-invite-button"><div id="chatnow" class="invite-button" style="margin-left: 5px; width: 81px; height: 26px; line-height: 26px; font-size: 12px; text-align: center; text-decoration: none; display: block; background-color: rgb(0, 168, 189); background-position: initial initial; background-repeat: initial initial;" href="javascript:;">现在咨询</div><div id="chatlater" class="invite-button" style="width: 81px; height: 26px; background-image: url(http://qiao.baidu.com/v3/img/matrix/btn.png); display: block; background-position: -88px 0px; background-repeat: initial initial;" href="javascript:;"></div></div></div></div></div></div></div></div>
+<script type="text/javascript" src="http://qiao.baidu.com/v3/asset/js/m-webim-lite.js?v=20130902" charset="utf-8"></script>
+  <%#<div id="container" class="container">%>
+    <%#<header>%>
+      <%#= render 'layouts/navigation' %>
+      <%#= render 'layouts/messages' %>
+      <%#</header>%>
+    <%#<div id="main" role="main">%>
+      <%#= yield %>
+      <%#</div>%>
+    <%#<footer>%>
+      <%#</footer>%>
+    <%#</div> [>! end of #container <]%>
+</body>
 </html>
