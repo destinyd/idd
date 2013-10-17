@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require 'home'
+ *= require 'sidebar'
  * require_tree .
 */
 .brand {
@@ -35,4 +36,7 @@ ul.nav li {
 #flash_alert {
   background-color: #FCC;
   border: solid 1px #C66;
+}
+.l{
+  float: left;
 }
