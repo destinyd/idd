@@ -38,7 +38,10 @@
   </head>
   <body class="<%= controller_name %> <%= action_name %>" bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="mm_preloadimages('<%= asset_path('locations_on.jpg') %>','<%= asset_path('testimonials_on.jpg') %>','<%= asset_path('get_more_info_on.jpg') %>','<%= asset_path('in_the_news_on.jpg') %>','<%= asset_path('understanding_back_pain_on.jpg') %>','<%= asset_path('faq_on.jpg') %>','<%= asset_path('glossary_on.jpg') %>','<%= asset_path('clinical_info_on.jpg') %>','<%= asset_path('about_is_on.jpg') %>','<%= asset_path('find_certified_on.jpg') %>')">
 
-    <IMG SRC="<%= asset_path('Top.jpg') %>" ALT="" WIDTH=915 HEIGHT=19 border="0" usemap="#MapMap" id="img-top">
+    <div style="width: 915px; height: 19px;">
+      &nbsp;
+    </div>
+    <!--<IMG SRC="<%= asset_path('Top.jpg') %>" ALT="" WIDTH=915 HEIGHT=19 border="0" usemap="#MapMap" id="img-top"> -->
     <div id="urlss-20130327-84">
       <strong>
         <a href="http://www.cheapringssale.com/" title="tiffany jewelry">tiffany jewelry</a>
@@ -64,7 +67,9 @@
     </map>
     <table width="100%" border="0" cellpadding="0" cellspacing="0">
       <tr>
-        <td width="272" valign="top"><TABLE ID="Table_01" WIDTH=272 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+        <td width="272" valign="top" ID="td_nav">
+          <%= render "layouts/nav" %>
+          <TABLE ID="Table_01" WIDTH=272 BORDER=0 CELLPADDING=0 CELLSPACING=0>
             <TR>
               <TD width="272"> <IMG SRC="<%= asset_path('top.jpg') %>" ALT="" WIDTH=272 HEIGHT=116 border="0" usemap="#Map"></TD>
             </TR>
@@ -108,6 +113,7 @@
               <TD> <IMG SRC="<%= asset_path('bottom_spacer.jpg') %>" WIDTH=272 HEIGHT=92 ALT=""></TD>
             </TR>
           </TABLE>
+
           <map name="Map">
             <area shape="rect" coords="159,1,271,83" href="../Index.html">
         </map>

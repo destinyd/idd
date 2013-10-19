@@ -12,4 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.cxmenu.js
 // require_tree .
+$(document).ready(function(){
+  $('#nav').cxMenu()
+})

@@ -1,0 +1,25 @@
+/* 全局样式
+------------------------------ */
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,table,th,td,fieldset,form,input,textarea,button,hr,blockquote,pre{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:100%;line-height:1em;}
+ul,ol,dl{list-style-type:none;}
+fieldset,img{border:none;}
+table{border-collapse:collapse;table-layout:fixed;empty-cells:show;}
+caption,th{text-align:left;font-weight:normal;}
+address,caption,cite,code,dfn,th{font-style:normal;font-weight:normal;}
+img,input,button,select{vertical-align:middle;}
+input,button,select,textarea{font-family:"\5fae\8f6f\96c5\9ed1";font-size:12px;vertical-align:baseline;*vertical-align:middle;}
+ins{text-decoration:underline;}
+del{text-decoration:line-through;}
+q:before,q:after{content:"";}
+hr{margin:3px 0;border:none;border-top:1px solid #bbb;border-bottom:1px solid #fff;_display:block;_margin:-5px 0;_font-size:0;_line-height:0;}
+textarea{padding:2px 3px;border:1px solid #555;}
+html{overflow-y:scroll;background-color:#fff;}
+body{min-height:500px;color:#333;font:14px/1.7 Tahoma,"\5fae\8f6f\96c5\9ed1","\5b8b\4f53",sans-serif;}
+a{color:#333;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+/* 清理浮动
+------------------------------ */
+.clearfix{zoom:1;}
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
