@@ -5,6 +5,7 @@ class Page
   field :path, type: String
   field :status, type: String
   field :published_at, type: Time
+  belongs_to :category
 
   #validates :path, presence: true, uniqueness: true
 end
