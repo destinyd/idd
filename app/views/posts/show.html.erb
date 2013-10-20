@@ -1,0 +1,41 @@
+<!--当前位置-->
+<div class="dqwz">
+  <a href='http://www.sdskey.com/'>主页</a> > <a href='http://www.sdskey.com/sds/'>SDS非手术介绍</a> > 
+</div>
+
+<div class="article_con">
+  <h1><%= @post.title %></h1>
+  <div class="article_detail"><b>来源：SDS非手术脊柱减压治疗中心(SDS官网)</b><b>发布时间：<%= @post.published_at.try(:cc_time) %></b><b>点击量：<script src="http://www.sdskey.com/plus/count.php?view=yes&amp;aid=39&amp;mid=0" type="text/javascript" language="javascript"></script>248</b></div>
+  <span class="daodu">
+    <%= image_tag "daodu.jpg", alt: '导读' %>
+  </span>
+  <p class="wzdao"><%= @post.introduction %></p>
+  <div class="wz_content">
+    <%= @post.content.try(:html_safe) %>
+  </div>
+  <!-- 将此标记放在您希望显示like按钮的位置 -->
+  <div class="bdlikebutton bdlikebutton-blue bdlikebutton-medium bdlikebutton-medium-blue"><div class="bdlikebutton-inner"><span class="bdlikebutton-add">+1</span><div class="bdlikebutton-count">4</div><div class="bdlikebutton-text">顶</div></div></div>
+
+  <!-- 将此代码放在适当的位置，建议在body结束前 -->
+  <script id="bdlike_shell" src="http://bdimg.share.baidu.com/static/js/like_shell.js?t=383968"></script>
+  <script>
+    var bdShare_config = {
+      "type":"medium",
+        "color":"blue",
+        "uid":"440751",
+        "share":"yes"
+    };
+document.getElementById("bdlike_shell").src="http://bdimg.share.baidu.com/static/js/like_shell.js?t=" + Math.ceil(new Date()/3600000);
+</script>
+
+</div>
+
+<ul class="zixun">
+  <li><a class="artd_zxzx" target="_blank" title="在线咨询" href="http://qiao.baidu.com/v3/?module=default&amp;controller=webim&amp;action=index&amp;siteid=3326816&amp;lastsubid=&amp;from=%E5%8C%97%E4%BA%AC%E5%AF%86%E4%BA%91&amp;bid=44a8ac94312c9509bca1ff31&amp;chattype=1&amp;ref=http%3A%2F%2Fwww.sdskey.com%2F"></a></li>
+  <li><a class="artd_tele" target="_blank" title="400-099-8322"></a></li>
+</ul>
+
+<ul class="shangxia">
+  <li>上一篇：<a href="http://www.sdskey.com/case/38.html" title="李先生_31岁_腰椎间盘突出" target="_blank">李先生_31岁_腰椎间盘突出</a> </li>
+  <li>下一篇：<a href="http://www.sdskey.com/case/40.html" title="李先生_31岁_腰椎间盘突出" target="_blank">金先生_50岁_椎间盘突出症</a> </li>
+</ul>
