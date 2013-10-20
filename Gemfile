@@ -17,6 +17,8 @@ gem 'simple_form'
 #gem 'inherited_resources'
 gem 'activeadmin-mongoid'
 gem 'kaminari'
+gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
+gem 'mini_magick', '>= 3.4'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]

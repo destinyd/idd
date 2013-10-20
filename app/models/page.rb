@@ -7,5 +7,7 @@ class Page
   field :published_at, type: Time
   belongs_to :category
 
+  scope :recent, desc(:published_at_at)
+
   #validates :path, presence: true, uniqueness: true
 end

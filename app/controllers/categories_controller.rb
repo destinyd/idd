@@ -7,7 +7,7 @@ class CategoriesController < ApplicationController
   def show
     @category = Category.find(params[:id])
     redirect_to @category.pages.first if @category.pages.count == 1
-    @posts = @category.posts
+    @posts = @category.posts.recent.page(params[:page])
   end
 end
 

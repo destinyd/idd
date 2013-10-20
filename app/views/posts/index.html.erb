@@ -1,5 +1,38 @@
-<ul>
-<% @posts.each do |post| %>
-  <li><%= link_to post.title, post %></li>
-<% end -%>
-</ul>
+<!--当前位置-->
+<div class="dqwz">
+  <a href='http://www.sdskey.com/'>主页</a> > <a href='http://www.sdskey.com/sds/'>SDS非手术介绍</a> > 
+</div>
+<!--当前位置结束-->
+<div class="article_con">
+  <!--1-->
+
+  <% @posts.each do |post| %>
+    <div class="list_con">
+      <%= link_to post do %>
+        <%= image_tag post.image, alt: post.title %>
+      <% end -%>
+      <dl>
+        <dt>
+        <%= link_to post.title, post, target: '_blank', title: post.title %>
+        </dt>
+        <dd>
+        <%= post.introduction %>
+        <%= link_to '[详情]', post, target: '_blank' %><span>[<%= post.published_at %>]</span>
+      </dl>
+    </div>
+  <% end -%>
+
+  <div class="fenye">
+    <%= paginate @posts %>
+  </div>
+
+  <div class="fenye">
+    <li><a class=sy>&lt;&lt;首页</a></li>
+    <li><a class="flipd_t wid"  >1</a></li>
+    <li><a href='list_1_2.html' class="flipd_f wid" target=_self>2</a></li>
+    <li><a href='list_1_2.html' class=fy target=_self>&gt;</a></li>
+    <li><a href='list_1_2.html' class=sy target=_self>末页&gt;&gt;</a></li>
+
+  </div>
+  <ul>
+  </ul>
