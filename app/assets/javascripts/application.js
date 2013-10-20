@@ -15,5 +15,8 @@
 //= require jquery.cxmenu.js
 // require_tree .
 $(document).ready(function(){
-  $('#nav').cxMenu()
+  $('.nav_left').cxMenu({
+    events:"mouseover", 
+    speed:600, 
+  })
 })
