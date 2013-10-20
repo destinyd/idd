@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  layout 'post', only: 'show'
+  layout 'sidebar'
   def index
     @posts = Post.page(params[:page])
   end

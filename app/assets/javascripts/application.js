@@ -16,7 +16,7 @@
 // require_tree .
 $(document).ready(function(){
   $('.nav_left').cxMenu({
-    events:"mouseover", 
+    events:"click", 
     speed:600, 
   })
 })

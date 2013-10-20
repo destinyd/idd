@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+  layout 'sidebar'
   def index
     @categories = Category.page(params[:page])
   end

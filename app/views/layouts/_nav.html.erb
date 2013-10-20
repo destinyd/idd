@@ -1,16 +1,18 @@
-<!--
 <ul id="nav" class="nav_left">
   <% Category.root.each do |root| %>
-    <li class="nav_l1"><a href="#"><%= root.name %></a>
+    <li class="nav_l1"><%= link_to root.name, root %>
       <%  if root.categories.any?  %>
         <ul>
           <% root.categories.each do |l2| %>
 
-            <li class="nav_l2"><a href="#"><%= l2.name %></a>
+            <li class="nav_l2">
+              <%= link_to  l2.name, l2 %>
               <%  if l2.categories.any?  %>
                 <ul>
                   <% l2.categories.each do |l3| %>
-                    <li class="nav_l3"><a href="#"><%= l3.name %></a></li>
+                    <li class="nav_l3">
+                      <%= link_to l3.name, l3 %>
+                    </li>
                   <% end -%>
                 </ul>
               <% end -%>
@@ -20,33 +22,4 @@
       <% end -%>
     </li>
   <% end -%>
-</ul>
--->
-<ul id="nav" class="nav_left">
-  <li class="nav_l1 selected"><a href="#">什么是IDD治疗</a>
-    <ul>
-      <li class="nav_l2"><a href="#">31</a></li>
-      <li class="nav_l2"><a href="#">32</a></li>
-      <li class="nav_l2"><a href="#">33</a>
-        <ul>
-          <li class="nav_l3"><a href="#">331</a></li>
-          <li class="nav_l3"><a href="#">332</a></li>
-        </ul>
-      </li>
-    </ul>
-
-  </li>
-  <li class="nav_l1"><a href="#">2</a></li>
-  <li class="nav_l1"><a href="#">3</a>
-    <ul>
-      <li class="nav_l2"><a href="#">31</a></li>
-      <li class="nav_l2"><a href="#">32</a></li>
-      <li class="nav_l2"><a href="#">33</a>
-        <ul>
-          <li class="nav_l3"><a href="#">331</a></li>
-          <li class="nav_l3"><a href="#">332</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
 </ul>
