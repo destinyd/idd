@@ -60,4 +60,7 @@
             </div>
           </div>
         </td>
-        <td width="643" valign="top"><img src="<%= asset_path('Header_image_patient.jpg') %>" width="643" height="368">
+        <td width="643" valign="top">
+<div id="slider">
+  <%= render 'layouts/flashes',flashes: Flash.recent %>
+</div>
