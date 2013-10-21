@@ -1,4 +1,4 @@
-<% @c = @category || (@page || @post).category %>
+<% @c = @category || (@page || @post).try(:category) %>
 <ul id="nav" class="nav_left">
   <% Category.root.each do |root| %>
     <li class=""><%= link_to root.name, root, class: 'a_root' %>

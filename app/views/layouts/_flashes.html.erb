@@ -1,0 +1,9 @@
+<%= content_tag :ul do %>
+  <% flashes.each do |flash| %>
+    <%= content_tag :li do %>
+      <%= link_to flash.url do%>
+        <%= image_tag(flash.image) -%>
+      <% end -%>
+    <% end -%>
+  <% end -%>
+<%end -%>

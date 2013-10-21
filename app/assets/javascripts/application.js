@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.cxmenu.js
+//= require easyslider
 // require_tree .
 //$(document).ready(function(){
   //$('.nav_left').cxMenu({
