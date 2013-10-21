@@ -1,16 +1,17 @@
+<% @c = @category || (@page || @post).category %>
 <ul id="nav" class="nav_left">
   <% Category.root.each do |root| %>
-    <li class="nav_l1"><%= link_to root.name, root %>
+    <li class="nav_l1<%= ' selected' if root == @c || root == @c.parent || root == @c.parent.try(:parent) %>"><%= link_to root.name, root %>
       <%  if root.categories.any?  %>
         <ul>
           <% root.categories.each do |l2| %>
 
-            <li class="nav_l2">
+            <li class="nav_l2<%= ' selected' if l2 == @c || l2 == @c.parent %>">
               <%= link_to  l2.name, l2 %>
               <%  if l2.categories.any?  %>
                 <ul>
                   <% l2.categories.each do |l3| %>
-                    <li class="nav_l3">
+                    <li class="nav_l3<%= ' selected' if root == @c %>">
                       <%= link_to l3.name, l3 %>
                     </li>
                   <% end -%>
