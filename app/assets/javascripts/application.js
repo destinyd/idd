@@ -12,20 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.cxmenu.js
 //= require easyslider
 // require_tree .
-//$(document).ready(function(){
-  //$('.nav_left').cxMenu({
-    //events:"click", 
-    //speed:600, 
-  //})
-//})
-
-
 
 $(document).ready(function() {
-
   // Store variables
 
   var accordion_head = $('.nav_left > li > a'),
@@ -53,5 +43,4 @@ accordion_head.on('mouseover', function(event) {
   }
 
 });
-
 });
