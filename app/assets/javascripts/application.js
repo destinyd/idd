@@ -14,9 +14,43 @@
 //= require jquery_ujs
 //= require jquery.cxmenu.js
 // require_tree .
-$(document).ready(function(){
-  $('.nav_left').cxMenu({
-    events:"click", 
-    speed:600, 
-  })
-})
+//$(document).ready(function(){
+  //$('.nav_left').cxMenu({
+    //events:"click", 
+    //speed:600, 
+  //})
+//})
+
+
+
+$(document).ready(function() {
+
+  // Store variables
+
+  var accordion_head = $('.nav_left > li > a'),
+accordion_body = $('.nav_left li > .sub-menu');
+
+// Open the first tab on load
+
+accordion_head.first().addClass('active').next().slideDown('normal');
+
+// Click function
+
+accordion_head.on('mouseover', function(event) {
+
+  // Disable header links
+
+  event.preventDefault();
+
+  // Show and hide the tabs on click
+
+  if ($(this).attr('class') != 'active'){
+    accordion_body.slideUp('normal');
+    $(this).next().stop(true,true).slideToggle('normal');
+    accordion_head.removeClass('active');
+    $(this).addClass('active');
+  }
+
+});
+
+});
