@@ -44,10 +44,10 @@ accordion_head.on('mouseover', function(event) {
 
 });
 
-$("#slider").easySlider({
-  auto: true,
-  numeric: true,
-  continuous: true
-});
+  $("#slider").easySlider({
+    auto: true,
+    numeric: true,
+    continuous: true
+  });
 
 });

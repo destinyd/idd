@@ -11,8 +11,8 @@
 			define width and height of list item (slide)
 			entire slider area will adjust according to the parameters provided here
 		*/ 
-		width:650px;
-		height:300px;
+		width:630px;
+		height:368px;
 		overflow:hidden; 
 		}	
 	#prevBtn, #nextBtn,
@@ -43,7 +43,7 @@
 	/* numeric controls */	
 
 	ol#controls{
-		margin:1em 0;
+		margin: -3em 0 2em 1em;
 		padding:0;
 		height:28px;	
 		}

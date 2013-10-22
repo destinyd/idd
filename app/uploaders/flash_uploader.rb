@@ -14,7 +14,6 @@ class FlashUploader < CarrierWave::Uploader::Base
   storage :file
   # storage :fog
 
-  process :resize_to_fit => [643, 368]
 
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
@@ -38,9 +37,9 @@ class FlashUploader < CarrierWave::Uploader::Base
   # end
 
   # Create different versions of your uploaded files:
-  # version :thumb do
-  #   process :scale => [50, 50]
-  # end
+  version :show do
+    process :resize_to_fit => [630, 368]
+  end
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
