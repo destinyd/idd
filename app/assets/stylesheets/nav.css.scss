@@ -7,11 +7,12 @@ body{
 }
 #nav{
   /*background:url('left.png') no-repeat 0px 0px;*/
-  min-height: 543px;
+  /*min-height: 543px;*/
   width: 272px;
   text-align: right;
   float: right;
   padding: 125px 10px 0 0;
+  margin-bottom: 30px;
 }
 /* 左导航
 ------------------------------ */
@@ -77,7 +78,7 @@ height: auto;
   li.active a.a_root:before, a.a_root:hover:before, a.a_root.active:before{
     content: url(arrow_down.png);
     float: left;
-    padding-left: 10px;
+    padding-left: 50px;
   }
 
   .sub-menu{

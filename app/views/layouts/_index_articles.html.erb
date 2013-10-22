@@ -1,6 +1,6 @@
-<div class="main">
+<div class="nav_hot">
   <% %w(最新活动 康复案例 视频中心 热点文章).each do |name| %>
-  <div class="hot_artcle mr">
+  <div class="hot_article mr">
     <span class="hot_title"><a target="_blank" href="#"><%= name %></a></span>
     <ul class="hot_list">
       <% category = Category.where(name: name).in_index.first %>
