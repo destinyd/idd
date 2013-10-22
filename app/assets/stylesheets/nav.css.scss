@@ -77,7 +77,7 @@ height: auto;
   li.active a.a_root:before, a.a_root:hover:before, a.a_root.active:before{
     content: url(arrow_down.png);
     float: left;
-    padding-left: 50px;
+    padding-left: 10px;
   }
 
   .sub-menu{

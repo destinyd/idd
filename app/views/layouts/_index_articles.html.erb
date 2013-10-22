@@ -1,0 +1,17 @@
+<div class="main">
+  <% %w(最新活动 康复案例 视频中心 热点文章).each do |name| %>
+  <div class="hot_artcle mr">
+    <span class="hot_title"><a target="_blank" href="#"><%= name %></a></span>
+    <ul class="hot_list">
+      <% category = Category.where(name: name).in_index.first %>
+      <% if category.pages.any? %>
+        <% category.posts.each do |post| %>
+          <li><%= link_to post.title, post, target: '_blank' %></li>
+        <% end -%>
+      <% else %>
+        <li>暂无消息</li>
+      <% end -%>
+    </ul>
+  </div>
+  <% end -%>
+</div>
