@@ -38,13 +38,13 @@
   </head>
   <body class="<%= controller_name %> <%= action_name %>" bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="mm_preloadimages('<%= asset_path('locations_on.jpg') %>','<%= asset_path('testimonials_on.jpg') %>','<%= asset_path('get_more_info_on.jpg') %>','<%= asset_path('in_the_news_on.jpg') %>','<%= asset_path('understanding_back_pain_on.jpg') %>','<%= asset_path('faq_on.jpg') %>','<%= asset_path('glossary_on.jpg') %>','<%= asset_path('clinical_info_on.jpg') %>','<%= asset_path('about_is_on.jpg') %>','<%= asset_path('find_certified_on.jpg') %>')">
 
-    <div style="width: 915px; height: 19px;">
-      &nbsp;
-    </div>
     <!--<IMG SRC="<%= asset_path('Top.jpg') %>" ALT="" WIDTH=915 HEIGHT=19 border="0" usemap="#MapMap" id="img-top"> -->
     <table width="100%" border="0" cellpadding="0" cellspacing="0">
       <tr>
         <td valign="top" ID="td_nav">
+          <div style="height: 19px;">
+            &nbsp;
+          </div>
           <%= render "layouts/nav" %>
           <div class="footer">
             <div>
@@ -61,6 +61,9 @@
           </div>
         </td>
         <td width="630" valign="top">
+          <div style="height: 19px;" id="mid-top">
+            &nbsp;
+          </div>
 <div id="slider">
   <%= render 'layouts/flashes',flashes: Flash.recent %>
 </div>
