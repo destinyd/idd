@@ -1,7 +1,7 @@
 <% @c = @category || (@page || @post).try(:category) %>
 <ul id="nav" class="nav_left">
-  <% Category.root.each do |root| %>
-    <li class=""><%= link_to root.name, root, class: 'a_root' %>
+  <% Category.in_menu.root.each do |root| %>
+    <li class="<%= ' active' if root == @c %>"><%= link_to root.name, root, class: 'a_root' %>
       <%  if root.categories.any?  %>
         <ul class="sub-menu ">
           <% root.categories.each do |l2| %>
