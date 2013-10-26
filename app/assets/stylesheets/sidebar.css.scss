@@ -23,14 +23,26 @@ p.wzdao{ width:592px; border:1px solid #1f2d62; background-color:#fff; height:au
 /*sds脊柱治疗中心*/
 .sdszlzx{ width:248px; height:auto; overflow:hidden;  padding:20px 8px 0px 8px;}
 .zlzx_title{ display:block;  height:35px; overflow:hidden; border-bottom:1px solid #202d73; }
-.sdszlzx ul{ width:248px; height:255px; padding-top:10px; overflow:hidden;}
-.sdszlzx ul li{ width:248px; height:26px; line-height:26px; overflow:hidden;}
-.sdszlzx ul li a{ display:block; width:248px; padding-left:10px; height:26px;
+.sdszlzx ul{
+/*width:248px; */
+/*height:255px; */
+padding-top:10px; overflow:hidden;
+padding-bottom: 10px;
+}
+.sdszlzx ul li{
+/*width:248px; */
+height:26px; line-height:26px; overflow:hidden;
+}
+.sdszlzx ul li a{
+  display:block; 
+  /*width:248px; */
+  padding-left:10px; height:26px;
 	/* 
 	background:url(asset-path('dian1.jpg',image)) no-repeat 0 0; 
 	background-position:26px center; 
 	*/
-	font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#1f2d62;}
+	font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#1f2d62;
+      }
 .sdszlzx ul li a:hover{ background:url(asset-path('centerbg2.jpg',image)) no-repeat 0 0; background-position:left center; color:#fff; text-decoration:none;}
 /*开设中心*/
 .kszx{ width:248px; height:auto; overflow:hidden;  padding:0px 8px 10px 8px;}
@@ -198,4 +210,19 @@ a.yyys_img4{ position:absolute; top:201px; left:169px;}
 .article_detail b{ font-weight:normal; font-size:12px; margin:0px 10px; color:#838697;}
 .list_new{color:red; font-family: "Microsoft YaHei","Simsun"; }
 
+/*self*/
+.sidebar_title{
+  padding: 2px 12px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #202D73;
+  font-family: 微软雅黑;
+}
+.sidebar_cyan{
+  color: #27ADA2;
+}
+.sidebar_hr{
+  width: 100%;
+  border-bottom: 1px solid #202D73;
+}
 
