@@ -1,4 +1,16 @@
 @charset "utf-8";
+@mixin border-radius($radius: 5px) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+@mixin rounded-side($side, $radius: 5px) {
+  border-#{$side}-radius: $radius;
+  -moz-border-radius-#{$side}: $radius;
+  -webkit-border-#{$side}-radius: $radius;
+}
+
 /* CSS Document */
 .other_banner{ width:944px; padding:5px 28px 0px 28px; height:229px; overflow:hidden; background-color:#fff;}
 .other_main{ width:944px; height:auto; overflow:hidden; background:url(asset-path('xian_bottombg.jpg',image)) no-repeat 0px 0px; background-position:bottom left; padding:15px 28px 30px 28px;}
@@ -17,8 +29,10 @@ p.wzdao{ width:592px; border:1px solid #1f2d62; background-color:#fff; height:au
 .wz_content{ width:624px; height:auto; overflow:hidden; padding:30px 0px; line-height:24px; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#1f2d62;}
 .wz_content p{ margin:10px 0px; text-indent:2em;}
 /*右边*/
-.other_right{ width:266px; height:auto; padding:30px 0px 5px 0px;  overflow:hidden; background:url(asset-path('obottombg.jpg',image)) no-repeat 0 0; background-position:bottom;}
-.bgcolor{ width:266px; height:auto;background:url(asset-path('otopbg.jpg',image)) no-repeat 0 0; background-position:top; padding-top:5px;}
+.other_right{ width:276px; height:auto; padding:30px 0px 5px 0px;  overflow:hidden;
+/*background:url(asset-path('obottombg.jpg',image)) no-repeat 0 0; background-position:bottom;*/
+}
+/*.bgcolor{ width:266px; height:auto;background:url(asset-path('otopbg.jpg',image)) no-repeat 0 0; background-position:top; padding-top:5px;}*/
 .bc{ border-left:1px solid #202d73; border-right:1px solid #202d73; background-color:#fcfefd;}
 /*sds脊柱治疗中心*/
 .sdszlzx{ width:248px; height:auto; overflow:hidden;  padding:20px 8px 0px 8px;}
@@ -52,7 +66,9 @@ height:26px; line-height:26px; overflow:hidden;
 .kszx_con ul li{ width:67px; padding:3px 7px 3px 8px; height:21px; float:left; overflow:hidden;}
 .kszx_con ul li ul{display: none;}
 .kszx_con ul li a{ display:block; width:67px; height:21px; text-align:center; line-height:21px; overflow:hidden; color:#1f2d62; font-size:12px; font-family:Arial, Helvetica, sans-serif;}
-.kszx_con ul li a:hover{ background:url(asset-path('kszx_bg.jpg',image)) no-repeat 0 0;cursor: pointer; color:#fff; text-decoration:none;}
+.kszx_con ul li a:hover{ 
+background:url(asset-path('kszx_bg.jpg',image)) no-repeat 0 0;
+cursor: pointer; color:#fff; text-decoration:none;}
 /*免费热线*/
 .dh_img{ display:block; width:248px; height:34px; overflow:hidden; text-align:center;}
 .yy_button{ display:block; width:248px; overflow:hidden; height:28px; padding:10px 0px;}
@@ -225,4 +241,14 @@ a.yyys_img4{ position:absolute; top:201px; left:169px;}
   width: 100%;
   border-bottom: 1px solid #202D73;
 }
-
+.sidebar{
+  width: 266px;
+  @include border-radius(1em);
+  /*-moz-border-radius: 2px;*/
+  /*-webkit-border-radius: 2px;*/
+  /*-o-border-radius: 2px;*/
+  /*-ms-border-radius: 2px;*/
+  /*-khtml-border-radius: 2px;*/
+  /*border-radius: 2px;*/
+  border: 1px solid #202D73;
+}
