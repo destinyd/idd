@@ -4,7 +4,7 @@
   <span class="daodu">
     <%= image_tag "daodu.jpg", alt: '导读' %>
   </span>
-  <p class="wzdao"><%= @post.introduction %></p>
+  <p class="wzdao"><%= @post.introduction || @post.content.block(150) %></p>
   <div class="wz_content">
     <%= @post.content.try(:html_safe) %>
   </div>
