@@ -44,13 +44,15 @@ padding-top:10px; overflow:hidden;
 padding-bottom: 10px;
 }
 .sdszlzx ul li{
-/*width:248px; */
+width:248px; 
 height:26px; line-height:26px; overflow:hidden;
 }
 .sdszlzx ul li a{
   display:block; 
   /*width:248px; */
-  padding-left:10px; height:26px;
+  padding-left:10px;
+  height:26px;
+  padding-right:10px;
 	/* 
 	background:url(asset-path('dian1.jpg',image)) no-repeat 0 0; 
 	background-position:26px center; 
