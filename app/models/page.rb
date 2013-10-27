@@ -8,7 +8,7 @@ class Page
   field :visits, type: Integer, default: 0
   belongs_to :category
 
-  scope :recent, desc(:published_at_at)
+  scope :recent, desc(:published_at)
 
   #validates :path, presence: true, uniqueness: true
 end
