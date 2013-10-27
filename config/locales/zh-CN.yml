@@ -246,6 +246,10 @@ zh-CN:
     price_per_liter: 每升均价
     min_price_per_liter: 最低每升均价
     website: 网站
+    visits: 访问次数
+    published_at: 发布于
+    introduction: 简介
+    category: 分类
 
 
   labels:
