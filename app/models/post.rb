@@ -5,4 +5,8 @@ class Post < Page
   mount_uploader :image, ImageUploader
 
   validates :title, presence: true
+
+  def to_s
+    title
+  end
 end

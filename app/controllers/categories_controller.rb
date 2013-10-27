@@ -8,6 +8,7 @@ class CategoriesController < ApplicationController
     @category = Category.find(params[:id])
     redirect_to @category.pages.first if @category.pages.count == 1
     @posts = @category.posts.recent.page(params[:page])
+    add_crumb @category.to_s
   end
 end
 

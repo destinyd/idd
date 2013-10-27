@@ -5,4 +5,5 @@ class ApplicationController < ActionController::Base
     redirect_to root_path, :alert => exception.message
   end
 
+  add_crumb I18n.t("site_title"), '/'
 end
