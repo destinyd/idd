@@ -31,6 +31,6 @@ document.getElementById("bdlike_shell").src="http://bdimg.share.baidu.com/static
 </ul>
 
 <ul class="shangxia">
-  <li>上一篇：<a href="http://www.sdskey.com/case/38.html" title="李先生_31岁_腰椎间盘突出" target="_blank">李先生_31岁_腰椎间盘突出</a> </li>
-  <li>下一篇：<a href="http://www.sdskey.com/case/40.html" title="李先生_31岁_腰椎间盘突出" target="_blank">金先生_50岁_椎间盘突出症</a> </li>
+  <li>上一篇： <%= @post.older ? link_to(@post.older, @post.older) : '没有了'  %> </li>
+  <li>下一篇： <%= @post.newer ? link_to(@post.newer, @post.newer) : '没有了'  %> </li>
 </ul>
