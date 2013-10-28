@@ -250,6 +250,9 @@ zh-CN:
     published_at: 发布于
     introduction: 简介
     category: 分类
+    category_name: 分类名称
+    url: 链接地址
+    ord: 排序（越大越靠前）
 
 
   labels:
