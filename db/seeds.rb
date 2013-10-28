@@ -23,3 +23,11 @@ end
   Category.where(name: name, is_index: true).first_or_create
 end
 
+{
+  'IDD疗法介绍' => %w(什么是IDD疗法 IDD疗法的原理 IDD疗法仪器介绍 IDD疗法康复数据 为什么选择IDD疗法 IDD疗法费用标准 IDD疗法的适用和禁忌),
+  'IDD疗法最新资讯' => %w(最新活动 热点文章 康复案例 网络视频)
+}.each do |category_name, sidebars|
+  sidebars.each do |sidebar|
+    Sidebar.where(category_name: category_name, name: sidebar).first_or_create
+  end
+end

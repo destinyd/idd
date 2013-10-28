@@ -1,6 +1,6 @@
 <div class="article_con">
   <h1><%= @post.title %></h1>
-  <div class="article_detail"><b>来源：SDS非手术脊柱减压治疗中心(SDS官网)</b><b>发布时间：<%= @post.published_at.try(:cc_time) %></b><b>点击量：<script src="http://www.sdskey.com/plus/count.php?view=yes&amp;aid=39&amp;mid=0" type="text/javascript" language="javascript"></script>248</b></div>
+  <div class="article_detail"><b>来源：SDS非手术脊柱减压治疗中心(SDS官网)</b><b>发布时间：<%= (@post.published_at || @post.created_at).try(:cc_time) %></b><b>访问量量：<%= @post.visits %></b></div>
   <span class="daodu">
     <%= image_tag "daodu.jpg", alt: '导读' %>
   </span>
@@ -31,6 +31,6 @@ document.getElementById("bdlike_shell").src="http://bdimg.share.baidu.com/static
 </ul>
 
 <ul class="shangxia">
-  <li>上一篇：<a href="http://www.sdskey.com/case/38.html" title="李先生_31岁_腰椎间盘突出" target="_blank">李先生_31岁_腰椎间盘突出</a> </li>
-  <li>下一篇：<a href="http://www.sdskey.com/case/40.html" title="李先生_31岁_腰椎间盘突出" target="_blank">金先生_50岁_椎间盘突出症</a> </li>
+  <li>上一篇： <%= @post.older ? link_to(@post.older, @post.older) : '没有了'  %> </li>
+  <li>下一篇： <%= @post.newer ? link_to(@post.newer, @post.newer) : '没有了'  %> </li>
 </ul>

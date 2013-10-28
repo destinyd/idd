@@ -6,6 +6,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    Page.update_counters @post.id, visits: 1
     add_crumb(@post.category, category_path(@post.category)) if @post.category
     add_crumb @post.to_s
   end
