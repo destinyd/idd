@@ -1,35 +1,33 @@
-<div class="other_right ml60" id="sidebar">
-  <div class="sidebar">
-    <!--sds脊柱治疗中心-->
-    <div class="sdszlzx">
-      <% Sidebar.all.group_by(&:category_name).each do |category_name, sidebars| %>
-        <div class="sidebar_title">
-          <span class="sidebar_cyan"><%= category_name[0..4] %></span><%= category_name[4..-1] %>
-        </div>
-        <div class="sidebar_hr">
-        </div>
-        <ul>
-          <% sidebars.each do |sidebar|  %>
-          <li><%= link_to sidebar.name, sidebar.url %></li>
-          <% end -%>
-        </ul>
-      <% end -%>
-    </div>
-
-
-    <!--开设中心-->
-    <div class="kszx">
+<div class="sidebar">
+  <!--sds脊柱治疗中心-->
+  <div class="sdszlzx">
+    <% Sidebar.all.group_by(&:category_name).each do |category_name, sidebars| %>
       <div class="sidebar_title">
-        <span class="sidebar_cyan">IDD疗法</span>国内覆盖地区
+        <span class="sidebar_cyan"><%= category_name[0..4] %></span><%= category_name[4..-1] %>
       </div>
       <div class="sidebar_hr">
       </div>
-      <div class="kszx_con">
-        <ul class="sidebar_ul">
-          <li><a target="_blank">北京市</a></li>
-        </ul>
-      </div>
-    </div>
-    <!--开设中心结束-->
+      <ul>
+        <% sidebars.each do |sidebar|  %>
+          <li><%= link_to sidebar.name, sidebar.url %></li>
+        <% end -%>
+      </ul>
+    <% end -%>
   </div>
+
+
+  <!--开设中心-->
+  <div class="kszx">
+    <div class="sidebar_title">
+      <span class="sidebar_cyan">IDD疗法</span>国内覆盖地区
+    </div>
+    <div class="sidebar_hr">
+    </div>
+    <div class="kszx_con">
+      <ul class="sidebar_ul">
+        <li><a target="_blank">北京市</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--开设中心结束-->
 </div>
