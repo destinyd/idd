@@ -35,21 +35,21 @@ p.wzdao{ width:592px; border:1px solid #1f2d62; background-color:#fff; height:au
 /*.bgcolor{ width:266px; height:auto;background:url(asset-path('otopbg.jpg',image)) no-repeat 0 0; background-position:top; padding-top:5px;}*/
 .bc{ border-left:1px solid #202d73; border-right:1px solid #202d73; background-color:#fcfefd;}
 /*sds脊柱治疗中心*/
-.sdszlzx{ width:248px; height:auto; overflow:hidden;  padding:20px 8px 0px 8px;}
+.sdszlzx{ width:182px; height:auto; overflow:hidden;  padding:20px 8px 0px 8px;}
 .zlzx_title{ display:block;  height:35px; overflow:hidden; border-bottom:1px solid #202d73; }
 .sdszlzx ul{
-/*width:248px; */
+/*width:182px; */
 /*height:255px; */
 padding-top:10px; overflow:hidden;
 padding-bottom: 10px;
 }
 .sdszlzx ul li{
-width:248px; 
+width:182px; 
 height:26px; line-height:26px; overflow:hidden;
 }
 .sdszlzx ul li a{
   display:block; 
-  /*width:248px; */
+  /*width:182px; */
   padding-left:10px;
   height:26px;
   padding-right:10px;
@@ -61,10 +61,10 @@ height:26px; line-height:26px; overflow:hidden;
       }
 .sdszlzx ul li a:hover{ background:url(asset-path('centerbg2.jpg',image)) no-repeat 0 0; background-position:left center; color:#fff; text-decoration:none;}
 /*开设中心*/
-.kszx{ width:248px; height:auto; overflow:hidden;  padding:0px 8px 10px 8px;}
+.kszx{ width:182px; height:auto; overflow:hidden;  padding:0px 8px 10px 8px;}
 .kszx_title{ display:block; width:240px; padding-left:8px; height:35px; border-bottom:1px solid #202d73; overflow:hidden;}
-.kszx_con{ width:248px; padding:15px 0px; overflow:hidden; height:auto;}
-.kszx_con ul{ width:248px; height:auto; overflow:hidden;}
+.kszx_con{ width:182px; padding:15px 0px; overflow:hidden; height:150px;}
+.kszx_con ul{ width:182px; height:auto; overflow:hidden;}
 .kszx_con ul li{ width:67px; padding:3px 7px 3px 8px; height:21px; float:left; overflow:hidden;}
 .kszx_con ul li ul{display: none;}
 .kszx_con ul li a{ display:block; width:67px; height:21px; text-align:center; line-height:21px; overflow:hidden; color:#1f2d62; font-size:12px; font-family:Arial, Helvetica, sans-serif;}
@@ -72,8 +72,8 @@ height:26px; line-height:26px; overflow:hidden;
 background:url(asset-path('kszx_bg.jpg',image)) no-repeat 0 0;
 cursor: pointer; color:#fff; text-decoration:none;}
 /*免费热线*/
-.dh_img{ display:block; width:248px; height:34px; overflow:hidden; text-align:center;}
-.yy_button{ display:block; width:248px; overflow:hidden; height:28px; padding:10px 0px;}
+.dh_img{ display:block; width:182px; height:34px; overflow:hidden; text-align:center;}
+.yy_button{ display:block; width:182px; overflow:hidden; height:28px; padding:10px 0px;}
 .yy_button b{ display:block; width:124px; height:28px; text-align:center; overflow:hidden; float:left;}
 .yy_button b a{ display:block; width:105px; height:28px; overflow:hidden; margin:0 auto;}
 .yy_button b a.o_zxzx{ background:url(asset-path('o_zxzx2.jpg',image)) no-repeat 0 0;}
@@ -231,26 +231,26 @@ a.yyys_img4{ position:absolute; top:201px; left:169px;}
 /*self*/
 .sidebar_title{
   padding: 2px 12px;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: bold;
   color: #202D73;
   font-family: 微软雅黑;
 }
 .sidebar_cyan{
-  color: #27ADA2;
+  color: #49b5e3;
 }
 .sidebar_hr{
   width: 100%;
-  border-bottom: 1px solid #202D73;
+  border-bottom: 1px solid #49b5e3;
 }
 .sidebar{
-  width: 266px;
-  @include border-radius(1em);
+  width: 200px;
+  @include border-radius(10px);
   /*-moz-border-radius: 2px;*/
   /*-webkit-border-radius: 2px;*/
   /*-o-border-radius: 2px;*/
   /*-ms-border-radius: 2px;*/
   /*-khtml-border-radius: 2px;*/
   /*border-radius: 2px;*/
-  border: 1px solid #202D73;
+  border: 1px solid #49b5e3;
 }
