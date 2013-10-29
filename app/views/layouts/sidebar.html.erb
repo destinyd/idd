@@ -1,14 +1,18 @@
 <%= render "layouts/before" %>
 <%#<div class="l" id="content">%>
   <%= render "layouts/crummy" %>
-  <%= yield %>
+<div class="content_left">
+<%= yield %>
+</div>
+<div class="content_right">
+  <%= render "layouts/sidebar" %>
+</div>
 </td>
 <td valign="top">
 <div style="height: 19px;">
             &nbsp;
           </div>
   <img src="<%= asset_path('right_side.jpg') %>" width="485">
-  <%= render "layouts/sidebar" %>
 <%#</div>%>
 <%#<div class="other_right" id="sidebar">%>
 <%#</div>%>
