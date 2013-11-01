@@ -3,6 +3,7 @@ ActiveAdmin.register Page do
   scope :recent, default: true
   scope :older
   index do
+    selectable_column
     column :title do |page|
       link_to page.title, admin_page_path(page)
     end
@@ -14,6 +15,7 @@ ActiveAdmin.register Page do
     end
     column :visits
     column :created_at
+    actions
   end
 
   form do |f|

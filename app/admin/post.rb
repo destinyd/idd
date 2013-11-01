@@ -3,6 +3,7 @@ ActiveAdmin.register Post do
   scope :recent, default: true
   scope :older
   index do
+    selectable_column
     column :image do |post|
       link_to image_tag(post.image.thumb), admin_post_path(post)
     end
@@ -17,6 +18,7 @@ ActiveAdmin.register Post do
     end
     column :visits
     column :created_at
+    actions
   end
 
   form do |f|
