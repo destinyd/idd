@@ -6,6 +6,8 @@ class Kindeditor::Asset
   mount_uploader :asset, Kindeditor::AssetUploader
   field :file_size, :type => Integer
   field :file_type, :type => String
+  field :asset_type, :type => String
+  belongs_to :owner, polymorphic: true#, inverse_of: :attachments
   validates_presence_of :asset
   before_save :update_asset_attributes
   attr_accessible :asset

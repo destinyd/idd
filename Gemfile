@@ -20,7 +20,7 @@ gem 'kaminari'
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 gem 'mini_magick', '>= 3.4'
 gem "crummy", "~> 1.7.1"
-gem 'rails_kindeditor', '~> 0.4.0'
+gem 'rails_kindeditor', '~> 0.4.0', github: 'Macrow/rails_kindeditor'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
