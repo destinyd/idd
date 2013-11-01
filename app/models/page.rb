@@ -1,6 +1,7 @@
 class Page
   include Mongoid::Document
   include Mongoid::Timestamps
+  field :title, type: String
   field :content, type: String
   #field :path, type: String
   field :status, type: String
@@ -8,8 +9,13 @@ class Page
   field :visits, type: Integer, default: 0
   belongs_to :category
 
+  validates :title, presence: true
+
   scope :recent, desc(:created_at)
   scope :older, asc(:created_at)
 
   #validates :path, presence: true, uniqueness: true
+  def to_s
+    title
+  end
 end
