@@ -202,6 +202,8 @@ zh-CN:
         image: 列表配图
       category:
         parent: 父分类
+      video:
+        url: 优酷视频网址
 
   attributes:
     created_at: 创建于
@@ -247,6 +249,7 @@ zh-CN:
     published_at: 发布于
     introduction: 简介
     category: 分类
+    category_id: 分类ID
     category_name: 分类名称
     url: 链接地址
     ord: 排序（越大越靠前）

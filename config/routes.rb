@@ -1,5 +1,6 @@
 Cms::Application.routes.draw do
   resources :categories
+  resources :videos
   resources :posts
   resources :pages
   devise_for :admin_users, ActiveAdmin::Devise.config

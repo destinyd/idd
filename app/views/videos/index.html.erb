@@ -1,0 +1,20 @@
+<div class="kfzl_sp">
+  <% @videos.each do |video| %>
+    <div class="kfzl_con">
+      <span class="sp_img">
+        <%= link_to video, target: '_blank' do %>
+          <%= image_tag video.image.list, title: video %>
+        <% end -%>
+      </span>
+      <b class="shipin"></b>
+      <%= link_to video, video, target: '_blank', class: 'sp_name' %>
+      <em>
+        <%= link_to video, video, target: '_blank' %>
+      </em>
+    </div>
+  <% end -%>
+</div>
+
+<div class="fenye">
+  <%= paginate @videos %>
+</div>
