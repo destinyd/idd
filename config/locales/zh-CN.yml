@@ -189,22 +189,19 @@ zh-CN:
 
   mongoid:
     models:
-      user: 用户
-      comment: 评论
-      group: 商品分类
-      article: 文章
-      wine: 酒
-      wine_price: 酒价
+      admin_user: 管理员
+      category: 分类
+      page: 页面
+      post: 文章
+      sidebar: 右边栏
+      flash: 滚动图片
       wine_monitor: 酒价监视器
       website: 网站
     attributes:
-      wine:
-        min_price: 历史最低价
-        current_price: 现价
-        fit_price: 建议入手价
-      wine_monitor:
-        sn: 商品编号
-        wines: 所属美酒
+      post:
+        image: 列表配图
+      category:
+        parent: 父分类
 
   attributes:
     created_at: 创建于
