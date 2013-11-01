@@ -1,4 +1,5 @@
 ActiveAdmin.register AdminUser do     
+  menu label: proc{I18n.t("mongoid.models.admin_user")}, priority: 12
   index do                            
     column :email                     
     column :current_sign_in_at        

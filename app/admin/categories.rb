@@ -1,4 +1,5 @@
 ActiveAdmin.register Category do
+  menu label: proc{I18n.t("mongoid.models.category")}, priority: 2
   remove_filter :categories
   remove_filter :pages
   remove_filter :posts
