@@ -254,3 +254,16 @@ a.yyys_img4{ position:absolute; top:201px; left:169px;}
   /*border-radius: 2px;*/
   border: 1px solid #49b5e3;
 }
+.article_con1{ width:410px; height:auto; padding:25px 0 0px 18px; overflow-x: hidden}
+.article_con1 h1{ width:405px; height:45px; line-height:45px; text-align:center; font-size:20px; overflow:hidden; color:#1f2d62;}
+.article_detail1{ width:400px; height:40px; overflow:hidden; text-align:center; line-height:40px;}
+.article_detail1 b{ font-weight:normal; font-size:12px; margin:0px 10px; color:#838697;}
+p.wzdao{ width:370px; border:1px solid #1f2d62; background-color:#fff; height:auto; margin-top:20px; padding:15px; line-height:24px; color:#1f2d62; font-family:Arial, Helvetica, sans-serif; font-size:14px;}
+.daodu1{ display:block; width:424px; height:26px; overflow:hidden;}
+.zixun1{ width:404px; height:50px; line-height:50px; overflow:hidden;padding:25px 0 0 20px; text-align: center}
+.zixun1 li{ width:202px; height:50px; float:left; text-align:center; overflow:hidden;}
+.zixun1 li a{ display:block; width:156px; height:50px; overflow:hidden;}
+.zixun1 li a.artd_zxzx{ background:url(asset-path('zxzx2.jpg',image)) no-repeat 0 0;}
+.zixun1 li a.artd_tele{ background:url(asset-path('dianhua2.jpg',image)) no-repeat 0 0;}
+.zixun1 li a.artd_zxzx:hover{ background:url(asset-path('zxzx.jpg',image)) no-repeat 0 0;}
+.zixun1 li a.artd_tele:hover{ background:url(asset-path('dianhua.jpg',image)) no-repeat 0 0;}
