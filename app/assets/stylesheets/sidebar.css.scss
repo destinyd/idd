@@ -83,11 +83,11 @@ cursor: pointer; color:#fff; text-decoration:none;}
 /*列表*/
 .list_con{ width:415px; height:90px; overflow:hidden;}
 a.list_img{ display:block; width:93px; height:70px; border:1px solid #ccc; overflow:hidden; float:left; background-color:#eee;}
-.list_con dl{ width:310px; height:72px; overflow:hidden; float:right; margin-right: 20px;}
+.list_con dl{ width:295px; height:72px; overflow:hidden; float:right; margin-right: 20px;}
 .list_con dl dt{ width:310px; height:24px; line-height:24px; overflow:hidden;}
-.list_con dl dt a{ font-size:14px; color:#1f2d72; font-family:Arial, Helvetica, sans-serif;}
+.list_con dl dt a{ font-size:14px; color:#1f2d72; font-family:Arial, Helvetica, sans-serif; font-weight: bold;}
 .list_con dl dd{ width:310px; height:48px; line-height:24px; overflow:hidden; font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#7981a8;}
-.list_con dl dd span{ color:#19a89c; margin-left:10px; float:right;}
+.list_con dl dd span{ color:#19a89c; margin-right:20px; float:right;}
 .list_con dl dd a{ margin-left:5px; color:#19a89c;}
 /*分页*/
 .fenye{ width:624px; height:30px; line-height:30px; overflow:hidden; text-align:center; padding-top:25px;}

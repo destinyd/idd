@@ -1,15 +1,8 @@
-<!--当前位置-->
-<div class="dqwz">
-  <a href='http://www.sdskey.com/'>主页</a> > <a href='http://www.sdskey.com/sds/'>SDS非手术介绍</a> > 
-</div>
-<!--当前位置结束-->
 <div class="article_con">
-  <!--1-->
-
   <% @posts.each do |post| %>
     <div class="list_con">
       <%= link_to post do %>
-        <%= image_tag post.image, alt: post.title %>
+        <%= image_tag post.image.thumb, alt: post.title %>
       <% end -%>
       <dl>
         <dt>
@@ -17,7 +10,7 @@
         </dt>
         <dd>
         <%= post.introduction %>
-        <%= link_to '[详情]', post, target: '_blank' %><span>[<%= post.published_at %>]</span>
+        <%= link_to '[详情]', post, target: '_blank' %><span>[<%= post.created_at.cc_time %>]</span>
       </dl>
     </div>
   <% end -%>

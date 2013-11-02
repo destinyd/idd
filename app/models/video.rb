@@ -4,14 +4,14 @@ class Video < Page
   mount_uploader :image, ImageUploader
   validates :url, presence: true
 
-  scope :newer_by, lambda{|post| where(:created_at.gt => post.created_at).older}
-  scope :older_by, lambda{|post| where(:created_at.lt => post.created_at).recent}
+  scope :newer_by, lambda{|video| where(:created_at.gt => video.created_at).older}
+  scope :older_by, lambda{|video| where(:created_at.lt => video.created_at).recent}
 
   def older
-    @older ||= category.posts.older_by(self).first if category
+    @older ||= Video.older_by(self).first
   end
 
   def newer
-    @newer ||= category.posts.newer_by(self).first if category
+    @newer ||= Video.newer_by(self).first
   end
 end
