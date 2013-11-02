@@ -1,5 +1,5 @@
 ActiveAdmin.register Video do
-  menu label: proc{I18n.t("mongoid.models.post")}
+  menu label: proc{I18n.t("mongoid.models.video")}
   scope :recent, default: true
 
   index do
