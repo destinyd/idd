@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>网站404页面</title>
+<style>
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+body{ text-align:center;}
+.wrong_con{ width:400px; text-align:left; margin:0 auto; padding-top:80px; line-height:40px;}
+.wrong_con,.wrong_con h2,.wrong_con a{ font-size:15px; font-weight:bold;}
+.wrong_title{ font-size:25px; color:#00f; font-weight:bold;}
+</style>
+</head>
+
+<body>
+<div class="wrong_con">
+	<p class="wrong_title">很抱歉，您要访问的页面不存在。</p>
+    <h2 class="fonts">1、请检查您输入的地址是否正确。</h2>
+    <p class="fonts">2、通过<a href="http://www.sdskey.com" title="SDS官网">SDS官网</a>进行浏览。</p>
+</div>
+</body>
+</html>

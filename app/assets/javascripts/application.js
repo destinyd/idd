@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require kindeditor
 //= require easyslider
+//= require SpryTabbedPanels
 // require_tree .
 
 $(document).ready(function() {

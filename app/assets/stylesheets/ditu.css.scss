@@ -1,0 +1,317 @@
+@charset "utf-8";
+/* CSS Document */
+.map_head{ width:100%; height:107px; overflow:hidden; text-align:center; background:url(asset-path('header_Bg.jpg', image)) repeat-x 0px 0px;}
+.map_header{ width:944px; height:87px; padding:20px 28px 0px 28px; overflow:hidden; overflow:hidden; margin:0px auto;}
+.daohangmap{ width:100%; height:38px; background-color:#fff; z-index:1; background:url(asset-path('map_navbg.jpg', image)) repeat-x 0px 0px;}
+.bgcolormap{ 
+/*width:100%; */
+width:1000px;
+height:auto; background:url(asset-path('map_conbg.jpg', image)) repeat 0px 0px;}
+.mapbanner{ 
+/*width:100%;*/
+width:1000px;
+height:531px;}
+.mapbanner a{ display:block; width:100%;}
+a.mapbanner1{ height:115px; background:url(asset-path('map_banner1.jpg', image)) no-repeat 0px 0px; background-position:center top;}
+a.mapbanner2{ height:117px; overflow:hidden; background:url(asset-path('map_banner2.jpg', image)) no-repeat 0px 0px; background-position:center top;}
+a.mapbanner3{ height:149px; overflow:hidden; background:url(asset-path('map_banner3.jpg', image)) no-repeat 0px 0px; background-position:center top;}
+a.mapbanner4{ height:150px; overflow:hidden; background:url(asset-path('map_banner4.jpg', image)) no-repeat 0px 0px; background-position:center top;}
+.dt_conmap{ width:1000px; height:auto; margin:0px auto; background:url(asset-path('map_ditu1.jpg', image)) no-repeat 0px 0px; background-position:center 50px; z-index:1000;}
+.jt_wz{ width:1000px; height:1000px; background:url(asset-path('map_ditu2.jpg', image)) no-repeat 0px 0px; background-position:center 205px; position:relative;}
+.map_ditu3{ width:1000px; height:1000px; background:url(asset-path('map_ditu3.jpg', image)) no-repeat 0px 0px; background-position:center 359px;}
+.map_ditu4{ width:1000px; height:1000px; background:url(asset-path('map_ditu4.jpg', image)) no-repeat 0px 0px; background-position:center 525px;}
+.map_ditu5{ width:1000px; height:1000px; background:url(asset-path('map_ditu5.jpg', image)) no-repeat 0px 0px; background-position:center 706px;}
+
+.jt_wz ul li ul{ display:none;}
+.dt_nav li.jc{ position:absolute; width:36px; height:40px; z-index:0;}
+.dt_nav li.jc a.subfolderstyle{ display:block; width:34px; padding-right:10px; line-height:36px; text-align:center; height:43px; background:url(asset-path('map_abg.png', image)) no-repeat 0 0; color:#fff; font-size:12px;}
+.dt_nav li.jc a.subfolderstyle:hover{ background:url(asset-path('map_ahoverbg.png', image)) no-repeat 0 0; font-size:12px; color:#fff;}
+.bcol{ padding:0px 5px; background-color:#f6f9ee; border:1px solid #663401; height:24px; line-height:24px; text-align:center;}
+
+.dt_bottombg{ width:518px; height:auto; text-align:left;}
+.bottom_arrow{ background:url(asset-path('map_hovjianbg.gif', image)) no-repeat 0px 0px; background-position:2px bottom; overflow:hidden; width:520px; height:27px;}
+.map_con{ background:url(asset-path('map_hovtitbg.png', image)) no-repeat 0px 0px; background-position:left top; width:518px; text-align:left;}
+.map_conbor{ width:505px; height:auto; padding:0px; margin:0px;}
+
+/*选项卡*/
+.dt_nav li.jc ul li ul{ display:block;}
+.TabbedPanels { width:490px; margin:0px; clear:none; padding:10px 0px 10px 15px; overflow:hidden; position:relative; height:auto;}
+.TabbedPanels ul{ display:block;}
+.TabbedPanelsTabGroup {	margin:0px; display:block; width:150px; height:auto; float:left; padding-top:49px;}
+.TabbedPanelsTab{ width:125px; height:21px; line-height:21px; overflow:hidden; background:url(asset-path('map_yynameac.jpg', image)) no-repeat 0px 0px; background-position:8px 9px; font-size:12px; color:#007bb3; text-align:left; padding-left:12px;}
+.TabbedPanelsTabHover { background:url(asset-path('map_yyname.jpg', image)) no-repeat 0px 0px; color:#fff;}
+.TabbedPanelsTabSelected { background:url(asset-path('map_yyname.jpg', image)) no-repeat 0px 0px; color:#fff;}
+.TabbedPanelsTab a { color: black; text-decoration: none;}
+.TabbedPanelsContentGroup { width:325px; height:auto; text-align:left;}
+.TabbedPanelsContent { display:inline; border-top:none; width:310px; height:auto;}
+.TabbedPanelsContentVisible {}
+.VTabbedPanels .TabbedPanelsTabGroup { float:left; background-color:#EEE;}
+.VTabbedPanels .TabbedPanelsTab { float:none; margin:0px;}
+.VTabbedPanels .TabbedPanelsTabSelected {}
+.VTabbedPanels .TabbedPanelsContentGroup {clear:none; float:left; padding: 0px;}
+.map_yynr{ width:310px; height:auto;}
+b.mc_title{ display:block; width:315px; padding-right:10px; height:49px; text-align:right; line-height:35px; padding-right:0px;}
+b.mc_title a{ font-size:14px; font-weight:bold; color:#fff;}
+b.mc_title a.yymingcheng{ float:right; display:block; width:300px; text-align:right; padding-right:10px;}
+b.mc_title a.closegb{ display:block; width:10px; height:20px; float:right;}
+.hos_detail{ width:310px; height:auto; overflow:hidden;}
+.hos_detail p{ width:280px; height:30px; line-height:30px; overflow:hidden; padding-left:30px; font-size:12px; color:#5c5c5c;}
+.hos_detail p.bgxh1{ background:url(asset-path('map_xh1.jpg', image)) no-repeat 0px 0px; background-position:left center;}
+.hos_detail p.bgxh2{ background:url(asset-path('map_xh2.jpg', image)) no-repeat 0px 0px; background-position:left center;}
+.hos_detail p.bgxh3{ background:url(asset-path('map_xh3.jpg', image)) no-repeat 0px 0px; background-position:left center;}
+.hos_detail p.bgxh4{ background:url(asset-path('map_xh4.jpg', image)) no-repeat 0px 0px; background-position:left center;}
+.hos_detail p b{ color:#38b6ab;}
+.hos_detail p a{ color:#5c5c5c;}
+.hos_zzyy{ width:290px; height:auto; overflow:hidden; background-color:#f3f8fc; margin-top:10px; padding:15px 10px; text-align:center;}
+.hos_zzyytit{ width:290px; height:30px; line-height:30px; overflow:hidden; font-size:14px; color:#1e2d72;}
+.hos_zzyytit a{ background:url(asset-path('map_szbg.jpg', image)) no-repeat 0px 0px; padding:10px 6px; background-position:center center; color:#1e2d72;}
+.hos_zzyytit a:hover{ text-decoration:none;}
+.hos_zzyybutton{ width:240px; height:29px; overflow:hidden; padding:10px 25px 0px 25px;}
+.hos_zzyybutton a{ display:block; width:120px; height:29px; text-align:center; float:left; overflow:hidden;}
+/*cont*/ 
+#slideBox .cont_l{float:left;background:url(images/slideBox_conleft.gif);width:157px;height:31px;padding:9px 7px 7px 14px;margin-bottom:4px;overflow:hidden} 
+#slideBox .cont_r{float:left;background:url(images/slideBox_conright.gif);width:157px;height:31px;padding:9px 7px 7px 14px;margin-bottom:4px;overflow:hidden} 
+#slideBox .oneline{line-height:33px;} 
+
+/*省份简称定位*/
+/*新疆*/
+.xinjiang{ position:absolute; top:200px; left:210px;}
+/*内蒙古*/
+.nmg{ position:absolute; top:300px; left:625px;}
+/*哈尔病*/
+.heb{ position:absolute; top:160px; right:120px;}
+/*吉林*/
+.jl{ position:absolute; top:216px; right:128px;}
+/*辽宁*/
+.ln{ position:absolute; top:271px; right:158px;}
+/*天津*/
+.tj{ position:absolute; top:335px; right:236px;}
+/*北京*/
+.bj{ position:absolute; top:307px; right:250px;}
+/*河北*/
+.hebei{ position:absolute; top:360px; right:285px;}
+/*山西*/
+.sxi{ position:absolute; top:350px; right:280px;}
+/*陕西*/
+.shanx{ position:absolute; top:430px; right:340px;}
+/*宁夏*/
+.ningx{ position:absolute; top:350px; right:390px;}
+/*甘肃*/
+.gans{ position:absolute; top:385px; right:430px;}
+/*青海*/
+.qingh{ position:absolute; top:390px; right:470px;}
+/*西藏*/
+.xzang{ position:absolute; top:510px; left:230px;}
+/*四川*/
+.sichuang{ position:absolute; top:500px; left:480px;}
+/*重庆*/
+.chongq{ position:absolute; top:560px; right:420px;}
+/*湖北*/
+.hbei{ position:absolute; top:525px; right:272px;}
+/*河南*/
+.henan{ position:absolute; top:450px; right:290px;}
+/*山东*/
+.shandong{ position:absolute; top:370px; right:210px;}
+/*安徽*/
+.anhui{ position:absolute; top:490px; right:232px;}
+/*江苏*/
+.jiangs{ position:absolute; top:507px; right:170px;}
+/*上海*/
+.shangh{ position:absolute; top:500px; right:138px;}
+/*浙江*/
+.zheji{ position:absolute; top:542px; right:170px;}
+/*福建*/
+.fujian{ position:absolute; top:593px; right:140px;}
+/*江西*/
+.jiangxi{ position:absolute; top:540px; right:210px;}
+/*湖南*/
+.hunan{ position:absolute; top:585px; right:292px;}
+/*贵州*/
+.guiz{ position:absolute; top:590px; right:385px;}
+/*云南*/
+.yunnan{ position:absolute; top:630px; right:445px;}
+/*广西*/
+.guangxi{ position:absolute; top:665px; right:350px;}
+/*广东*/
+.guangdong{ position:absolute; top:696px; right:270px;}
+/*台湾*/
+.taiwan{ position:absolute; top:601px; right:100px;}
+/*香港*/
+.xgang{ position:absolute; top:671px; right:225px;}
+/*澳门*/
+.aomen{ position:absolute; top:682px; right:255px;}
+
+
+/*医院介绍定位*/
+.poswz1{ position:absolute; left:-400px; top:-370px;}
+/*河北医院*/
+.hebeiname1{ position:absolute; top:-10px; left:28px; width:120px;}
+.hebeiname2{ position:absolute; top:16px; left:28px; width:130px;}
+/*河北医院介绍*/
+.hebeiwz1{ position:absolute; top:-370px; left:-650px;}
+.hebeiwz2{ position:absolute; top:-410px; left:-650px;}
+/*河南医院*/
+.hnanname1{ position:absolute; top:-15px; right:36px; width:130px;}
+.hnanname2{ position:absolute; top:10px; right:36px; width:130px;}
+.hnanname3{ position:absolute; top:35px; right:36px; width:130px;}
+.hnanname4{ position:absolute; top:60px; right:36px; width:130px;}
+.hnanname5{ position:absolute; top:85px; right:36px; width:130px;}
+.hnanname6{ position:absolute; top:110px; right:36px; width:130px;}
+.hnanname7{ position:absolute; top:135px; right:36px; width:130px;}
+/*河南医院介绍*/
+.hnanwz1{ position:absolute; top:-370px; left:-650px;}
+.hnanwz2{ position:absolute; top:-492px; left:-650px;}
+.hnanwz3{ position:absolute; top:-450px; left:-650px;}
+.hnanwz4{ position:absolute; top:-490px; left:-650px;}
+.hnanwz5{ position:absolute; top:-370px; left:-650px;}
+.hnanwz6{ position:absolute; top:-530px; left:-650px;}
+.hnanwz7{ position:absolute; top:-410px; left:-650px;}
+/*湖北医院*/
+.hubeiname1{ position:absolute; top:-24px; left:-55px; width:95px;}
+/*湖北医院介绍*/
+.hubeiwz1{ position:absolute; top:-410px; left:-340px;}
+/*天津医院*/
+.tianjinname1{ position:absolute; top:-50px; left:-60px; width:85px;}
+.tianjinname2{ position:absolute; top:-24px; left:-90px; width:106px;}
+/*天津人民介绍*/
+.tianjinwz1{ position:absolute; top:-490px; left:-600px;}
+/*辽宁医院*/
+.liaoningname1{ position:absolute; top:-52px; left:-165px; width:155px;}
+.liaoningname2{ position:absolute; top:-26px; left:-165px; width:155px;}
+.liaoningname3{ position:absolute; top:0px; left:-165px; width:155px;}
+/*辽宁医院介绍*/
+.liaoningwz1{ position:absolute; top:-450px; left:-650px;}
+.liaoningwz2{ position:absolute; top:-450px; left:-650px;}
+.liaoningwz3{ position:absolute; top:-490px; left:-650px;}
+
+/*北京医院*/
+.beijingname1{ position:absolute; top:-24px; left:-100px; width:130px;}
+
+/*北京医院介绍*/
+.beijingwz1{ position:absolute; top:-450px; left:-650px;}
+
+/*重庆医院*/
+.chongqingname1{ position:absolute; top:-24px; left:-100px; width:170px;}
+
+/*重庆医院介绍*/
+.chongqingwz1{ position:absolute; top:-490px; left:-600px;}
+
+
+/*内蒙古医院*/
+.nmguname1{ position:absolute; bottom:38px; left:-303px; width:140px;}
+.nmguname2{ position:absolute; top:24px; left:-150px; width:140px;}
+/*内蒙古医院介绍*/
+.nmguwz1{ position:absolute; top:-491px; left:-620px;}
+.nmguwz2{ position:absolute; top:-410px; left:-620px;}
+
+/*上海医院*/
+.shanghainame1{ position:absolute; left:-50px; top:-24px; width:140px;}
+
+/*上海医院介绍*/
+.shanghaiwz1{ position:absolute; top:-452px; left:-340px;}
+
+/*安徽医院*/
+.anhuiname1{ position:absolute; left:-50px; top:-24px; width:160px;}
+
+/*安徽医院介绍*/
+.anhuiwz1{ position:absolute; top:-532px; left:-340px;}
+
+/*江苏医院*/
+.jiangsuname1{ position:absolute; left:-140px; top:-20px; width:140px;}
+
+/*江苏医院介绍*/
+.jiangsuwz1{ position:absolute; top:-452px; left:-340px;}
+
+/*浙江医院*/
+.zhejiangname1{ position:absolute; left:-50px; top:-24px; width:140px;}
+
+/*浙江医院介绍*/
+.zhejiangwz1{ position:absolute; top:-410px; left:-340px;}
+
+/*湖南医院*/
+.hunanname1{ position:absolute; left:-50px; top:-24px; width:100px;}
+
+/*湖南医院介绍*/
+.hunanwz1{ position:absolute; top:-450px; left:-340px;}
+
+/*湖南医院*/
+.guangdongname1{ position:absolute; left:-50px; top:-24px; width:150px;}
+
+/*湖南医院介绍*/
+.guangdongwz1{ position:absolute; top:-530px; left:-340px;}
+
+/*辽宁医院*/
+.heilongjiangname1{ position:absolute; top:-52px; left:-165px; width:155px;}
+.heilongjiangname2{ position:absolute; top:-26px; left:-165px; width:155px;}
+.heilongjiangname3{ position:absolute; top:0px; left:-165px; width:155px;}
+/*辽宁医院介绍*/
+.heilongjiangwz1{ position:absolute; top:-450px; left:-650px;}
+.heilongjiangwz2{ position:absolute; top:-530px; left:-650px;}
+.heilongjiangwz3{ position:absolute; top:-450px; left:-650px;}
+/*********************************************************************************/
+.suckerdiv ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+width: 150px; /* Width of Menu Items */
+border-bottom: 1px solid #ccc;
+}
+	
+.suckerdiv ul li{
+position: relative;
+}
+	
+/*1st level sub menu style */
+.suckerdiv ul li ul{
+left: 149px; /* Parent menu width - 1*/
+position: absolute;
+width: 160px; /*sub menu width*/
+top: 0;
+display: none;
+}
+
+/*All subsequent sub menu levels offset */
+.suckerdiv ul li ul li ul{ 
+left: 159px; /* Parent menu width - 1*/
+}
+
+/* menu links style */
+.suckerdiv ul li a{
+display: block;
+color: black;
+text-decoration: none;
+font:12px 宋体;
+background: #fff;
+padding: 5px 5px;
+border: 1px solid #ccc;
+border-bottom: 0;
+}
+
+.suckerdiv ul li a:visited{
+color: black;
+}
+
+.suckerdiv ul li a:hover{
+color: white;
+background-color: gray;
+}
+
+/*.suckerdiv .subfolderstyle{
+background: url(asset-path('arrow-list.gif', image)) no-repeat center right;
+}*/
+
+	
+/* Holly Hack for IE \*/
+* html .suckerdiv ul li { float: left; height: 1%; }
+* html .suckerdiv ul li a { height: 1%; }
+/* End */
+
+
+.mfzxzxtj{ position:absolute; bottom:155px; left:13px; width:346px; height:auto; overflow:hidden; background:url(asset-path('map_mfzxzxtj.jpg', image)) no-repeat 0px 0px; overflow:hidden; text-align:left;}
+.mfzztj_tit{ width:326px; padding-right:30px; height:52px; overflow:hidden; line-height:40px; text-align:right; color:#fff; font-size:14px; font-weight:bold; text-align:right;}
+.mfzxtj_con{ padding-left:2px;}
+.mfzxtj_bor{ width:309px; border:1px solid #005782; border-top:0px; background-color:#dae9f0; height:auto; padding:5px 10px 15px 10px;}
+.mfzx_mqian{ width:309px; height:30px; line-height:30px; text-align:center; color:#7b7c7e; font-size:14px;}
+.mfzx_mqian a{ background:url(asset-path('map_szbg.jpg', image)) no-repeat 0px 0px; background-position:center center; padding:10px 7px; color:#222f5b;}
+.mfzx_mqbutton{ width:309px; height:37px; padding-top:5px; overflow:hidden;}
+.mfzx_mqbutton a{ display:block; width:154px; height:37px; text-align:center; overflow:hidden; float:left;}

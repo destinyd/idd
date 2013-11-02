@@ -1,4 +1,5 @@
 Cms::Application.routes.draw do
+  resources :companies
   resources :categories
   resources :videos
   resources :posts
