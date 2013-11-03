@@ -4,17 +4,17 @@ ActiveAdmin.register Video do
 
   index do
     selectable_column
-    column :image do |post|
-      link_to image_tag(post.image.thumb), admin_post_path(post)
+    column :image do |video|
+      link_to image_tag(video.image.thumb), admin_video_path(video)
     end
-    column :title do |post|
-      link_to post.title, admin_post_path(post)
+    column :title do |video|
+      link_to video.title, admin_video_path(video)
     end
-    column :introduction do |post|
-      post.introduction || post.content.block
+    column :introduction do |video|
+      video.introduction || video.content.block
     end
-    column :category do |post|
-      link_to post.category, admin_category_path(post.category)
+    column :category do |video|
+      link_to video.category, admin_category_path(video.category) if video.category
     end
     column :visits
     column :created_at
@@ -26,7 +26,7 @@ ActiveAdmin.register Video do
       f.input :title
       f.input :url
       f.input :introduction
-      f.input :content, as: :kindeditor#, owner_id: post
+      f.input :content, as: :kindeditor#, owner_id: video
       f.input :image
     end
     f.actions
