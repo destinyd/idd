@@ -11,7 +11,7 @@ ActiveAdmin.register Page do
       page.content.block
     end
     column :category do |page|
-      link_to page.category, admin_category_path(page.category)
+      link_to page.category, admin_category_path(page.category) if page.category
     end
     column :visits
     column :created_at
@@ -20,6 +20,7 @@ ActiveAdmin.register Page do
 
   form do |f|
     f.inputs do
+      f.input :title
       f.input :category, collection: Category.all
       f.input :content, as: :kindeditor#, owner_id: page
     end
