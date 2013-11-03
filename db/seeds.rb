@@ -16,11 +16,15 @@
 #user = User.create! :name => ENV['ADMIN_NAME'].dup, :email => ENV['ADMIN_EMAIL'].dup, :password => ENV['ADMIN_PASSWORD'].dup, :password_confirmation => ENV['ADMIN_PASSWORD'].dup
 #puts 'user: ' << user.name
 #user.add_role :admin
-%w(什么是IDD疗法 了解腰背疼痛 常见问题解答 专业病理词汇 合作意向 关于我们 IDD治疗中心和合作关联医院).each do |name|
+%w(什么是IDD疗法 了解腰背疼痛 常见问题解答 专业病理词汇 合作意向 关于我们).each do |name|
   Category.where(name: name, is_menu: true).first_or_create
 end
 %w(最新活动 康复案例 视频中心 热点文章).each do |name|
   Category.where(name: name, is_index: true).first_or_create
+end
+
+%w(IDD治疗中心和合作关联医院).each do |name|
+  Category.where(name: name).first_or_create
 end
 
 {

@@ -2,7 +2,7 @@
 <ul id="nav" class="nav_left">
   <li><%= link_to '首页', '/', class: 'a_root' %></li>
   <% Category.in_menu.root.each do |root| %>
-    <li class="<%= ' active' if root == @c %>"><%= link_to root.name, root, class: 'a_root' %>
+    <li class=""><%= link_to root.name, root, class: 'a_root' %>
       <%  if root.categories.any?  %>
         <ul class="sub-menu ">
           <% root.categories.each do |l2| %>
@@ -12,7 +12,7 @@
               <%  if l2.categories.any?  %>
                 <ul>
                   <% l2.categories.each do |l3| %>
-                    <li class="nav_l3<%= ' active' if root == @c %>">
+                    <li class="nav_l3">
                       <%= link_to l3.name, l3 %>
                     </li>
                   <% end -%>
@@ -24,5 +24,8 @@
       <% end -%>
     </li>
   <% end -%>
+  <li>
+    <%= link_to 'IDD治疗中心和合作关联医院', companies_path, class: "a_root" %>
+  </li>
 </ul>
 <%= render "layouts/index_articles" %>
