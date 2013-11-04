@@ -13,8 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require kindeditor
-//= require easyslider
 //= require SpryTabbedPanels
+//= require amazingslider
+//= require initslider-1
 // require_tree .
 
 $(document).ready(function() {

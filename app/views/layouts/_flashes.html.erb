@@ -1,4 +1,5 @@
-<%= content_tag :ul do %>
+<div id="amazingslider-1" style="display:block;position:relative;margin:0 auto 0;overflow: hidden">
+<%= content_tag :ul, class: 'amazingslider-slides', style: 'display:none;' do %>
   <% flashes.each do |flash| %>
     <%= content_tag :li do %>
       <%= link_to flash.url do%>
@@ -7,3 +8,4 @@
     <% end -%>
   <% end -%>
 <%end -%>
+</div>
