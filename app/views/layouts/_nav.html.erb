@@ -28,4 +28,6 @@
     <%= link_to 'IDD治疗中心和合作关联医院', companies_path, class: "a_root" %>
   </li>
 </ul>
-<%= render "layouts/index_articles" %>
+<% if controller_name == 'home' %>
+  <%= render "layouts/index_articles" %>
+<% end %>
