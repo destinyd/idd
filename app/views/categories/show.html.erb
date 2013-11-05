@@ -12,7 +12,7 @@
         </dt>
         <dd>
         <%= post.introduction %>
-        <%= link_to '[详情]', post, target: '_blank' %><span>[<%= post.published_at.try(:cc_time) %>]</span>
+        <%= link_to '[详情]', post, target: '_blank' %><span>[<%= post.created_at.try(:cc_time) %>]</span>
       </dl>
     </div>
   <% end -%>

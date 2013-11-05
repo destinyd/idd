@@ -5,7 +5,7 @@
     <%= image_tag "daodu1.png", alt: '导读' %>
   </span>
   <p class="wzdao"><%= @post.introduction || @post.content.block(150) %></p>
-  <div class="wz_content">
+  <div class="wz_content1">
     <%= @post.content.try(:html_safe) %>
   </div>
   <!-- 将此标记放在您希望显示like按钮的位置 -->
