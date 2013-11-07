@@ -30,4 +30,23 @@
     </div>
   </div>
   <!--开设中心结束-->
+  <% if controller_name != 'home' %>
+    <div class="sdszlzx">
+      <div class="sidebar_title">
+        <span class="sidebar_cyan">相关文章</span>
+      </div>
+      <div class="sidebar_hr">
+      </div>
+      <ul>
+        <% posts = (@category || @post.category).posts.recent.page %>
+        <% if posts.any? %>
+          <% posts.each do |post| %>
+            <li><%= link_to post.title, post %></li>
+          <% end -%>
+        <% else %>  
+          <li><a href="#">暂无相关</a></li>
+        <% end %>
+      </ul>
+  </div>
+  <% end -%>
 </div>
