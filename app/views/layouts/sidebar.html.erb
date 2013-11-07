@@ -1,6 +1,10 @@
 <%= render "layouts/before" %>
-<%#<div class="l" id="content">%>
-  <%= render "layouts/crummy" %>
+<% if category = @category || @post.try(:category) %>
+  <%= image_tag category.image %>
+<% else %>
+  <%= image_tag "flash_main.png" %>
+<% end -%>
+<%= render "layouts/crummy" %>
 <div class="content_left">
 <%= yield %>
 </div>

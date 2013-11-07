@@ -8,6 +8,7 @@ ActiveAdmin.register Category do
     column :name
     column :ord
     column :parent
+    column :image
     actions
   end
 
@@ -16,6 +17,7 @@ ActiveAdmin.register Category do
       f.input :name
       f.input :ord
       f.input :parent, collection: Category.all
+      f.input :image
     end
     f.actions
   end 

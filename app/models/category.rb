@@ -4,6 +4,7 @@ class Category
   field :ord, type: Integer, default: ->{ Category.count + 1}
   field :is_menu, type: Boolean
   field :is_index, type: Boolean
+  mount_uploader :image, FlashUploader
   belongs_to :parent, class_name: 'Category', inverse_of: :categories
   has_many :categories, inverse_of: :parent
   has_many :pages

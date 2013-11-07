@@ -1,4 +1,9 @@
 <%= render "layouts/before" %>
+<% if category = (@video || @page).try(:category) %>
+  <%= image_tag category.image %>
+<% else %>
+  <%= image_tag "flash_main.png" %>
+<% end -%>
 <%= yield %>
 </td>
 <td valign="top">
