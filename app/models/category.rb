@@ -15,6 +15,7 @@ class Category
   scope :root, where(parent: nil)
   scope :in_menu, where(is_menu: true)
   scope :in_index, where(is_index: true)
+  default_scope desc(:ord)
   
   index({ ord: 1 }, {background: true })
   index({ is_menu: 1 }, {background: true })
