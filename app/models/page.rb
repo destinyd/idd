@@ -9,8 +9,6 @@ class Page
   field :visits, type: Integer, default: 0
   belongs_to :category
 
-  validates :title, presence: true
-
   scope :recent, desc(:created_at)
   scope :older, asc(:created_at)
 

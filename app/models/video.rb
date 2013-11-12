@@ -3,6 +3,7 @@ class Video < Page
   field :url, type: String
   mount_uploader :image, ImageUploader
   validates :url, presence: true
+  validates :title, presence: true
 
   scope :newer_by, lambda{|video| where(:created_at.gt => video.created_at).older}
   scope :older_by, lambda{|video| where(:created_at.lt => video.created_at).recent}

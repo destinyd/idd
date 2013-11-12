@@ -2,6 +2,8 @@ class Post < Page
   field :introduction, type: String
   mount_uploader :image, ImageUploader
 
+  validates :title, presence: true
+
   scope :newer_by, lambda{|post| where(:created_at.gt => post.created_at).older}
   scope :older_by, lambda{|post| where(:created_at.lt => post.created_at).recent}
 
