@@ -1,9 +1,6 @@
 <div class="article_con">
   <h1><%= @video.title %></h1>
   <div class="article_detail"><b>来源：SDS非手术脊柱减压治疗中心(SDS官网)</b><b>发布时间：<%= (@video.published_at || @video.created_at).try(:cc_time) %></b><b>访问量量：<%= @video.visits %></b></div>
-  <span class="daodu">
-    <%= image_tag "daodu.jpg", alt: '导读' %>
-  </span>
 
   <div class="wz_content">
     <p style="text-align: center">
