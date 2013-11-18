@@ -1,6 +1,6 @@
 <% @c = @category || (@page || @post).try(:category) %>
 <ul id="nav" class="nav_left">
-  <li><%= link_to '首页', '/', class: 'a_root' %></li>
+  <!--  <li><%= link_to '首页', '/', class: 'a_root' %></li>-->
   <% Category.in_menu.root.each do |root| %>
     <li class=""><%= link_to root.name, root, class: 'a_root' %>
       <%  if root.categories.any?  %>
