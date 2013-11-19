@@ -78,5 +78,4 @@ pickle-email-*.html
 /config/application.yml
 Gemfile.lock
 config/mongoid.yml
-public/u/*
-public/uploads/
+public/
