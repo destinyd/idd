@@ -3,7 +3,7 @@
   <div class="sdszlzx">
     <% Sidebar.all.group_by(&:category_name).each do |category_name, sidebars| %>
       <div class="sidebar_title">
-        <span class="sidebar_cyan"><%= category_name[0..4] %></span><%= category_name[4..-1] %>
+        <span class="sidebar_cyan"><%= category_name %></span>
       </div>
       <div class="sidebar_hr">
       </div>
@@ -38,7 +38,7 @@
   <!--开设中心-->
   <div class="kszx">
     <div class="sidebar_title">
-      <span class="sidebar_cyan">IDD疗法</span>国内覆盖地区
+      <span class="sidebar_cyan">IDD疗法国内覆盖地区</span>
     </div>
     <div class="sidebar_hr">
     </div>
