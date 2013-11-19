@@ -80,3 +80,22 @@ ul.nav li {
   background-color:#FAFBFF;
   height: 19px;
 }
+#bridge_buttons{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 80px;
+}
+#bridge_btn1{
+  width: 75px;
+  height: 27px;
+  background:url('bridge_btn1.png') no-repeat 0px 0px;
+  border: none;
+}
+#bridge_btn2{
+  width: 75px;
+  height: 27px;
+  background:url('bridge_btn2.png') no-repeat 0px 0px;
+  border: none;
+  margin-top: 10px;
+}
