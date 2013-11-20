@@ -9,6 +9,8 @@ ActiveAdmin.register Category do
     column :ord
     column :parent
     column :image
+    column :is_menu
+    column :is_index
     actions
   end
 
@@ -18,6 +20,8 @@ ActiveAdmin.register Category do
       f.input :ord
       f.input :parent, collection: Category.all
       f.input :image
+      f.input :is_menu, as: :boolean
+      f.input :is_index, as: :boolean
     end
     f.actions
   end 

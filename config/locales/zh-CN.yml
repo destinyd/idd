@@ -254,6 +254,8 @@ zh-CN:
     category_name: 分类名称
     url: 链接地址
     ord: 排序（越大越靠前）
+    is_menu: 是否为导航（没有父节点，且为真则在导航显示）
+    is_index: 是否为主页左下新闻分类
 
 
   labels:
@@ -341,21 +343,6 @@ zh-CN:
     articles: 文章
     wine_monitors: '酒价信息'
   action:
-    prices:
-      new: 记账
-      cheapest: 最便宜
-      groupbuy: 团购
-      costs: 实际消费
-      index: 最新
-      just_started: 刚刚开始
-      nearly_finish: 即将结束
-    brands:
-      new: 添加
-    shops:
-      new: 添加
-    goods:
-      new: 添加
-      search: 搜索
     articles:
       new: 添加
     sessions:
@@ -366,30 +353,12 @@ zh-CN:
     home:
       contact: 联系方式
       download: 应用下载
-    costs:
-      new: 记录消费
-      create: 记录消费
-    places:
-      new: 记录地点
-      create: 记录地点
-      search: 搜索
-    bills:
-      new: 记账
-    msgs:
-      sents: 发件箱
     new: 添加
     create: 提交
     index: 列表
     edit: 修改
     show: 显示
     search: 搜索
-    traders:
-      contact: 联系方式
-    commodities:
-      categories: 分类目录
-      category: 分类%{category}
-    tags: 标签
-    tag: "标签: %{tag}"
 
   will_paginate:
     previous_label: "&#8592; 上一页"
