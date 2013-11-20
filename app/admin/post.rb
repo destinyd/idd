@@ -5,7 +5,7 @@ ActiveAdmin.register Post do
   index do
     selectable_column
     column :image do |post|
-      link_to image_tag(post.image.thumb), admin_post_path(post)
+      link_to image_tag(post.image.thumb), admin_post_path(post) if post.image
     end
     column :title do |post|
       link_to post.title, admin_post_path(post)
@@ -14,7 +14,7 @@ ActiveAdmin.register Post do
       post.introduction || post.content.block
     end
     column :category do |post|
-      link_to post.category, admin_category_path(post.category)
+      link_to post.category, admin_category_path(post.category) if post.category
     end
     column :visits
     column :created_at
