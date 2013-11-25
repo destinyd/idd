@@ -23,7 +23,7 @@
       <div class="sidebar_hr">
       </div>
       <ul>
-        <% posts = (@category || @post.category).posts.recent.page %>
+        <% posts = (@category || @post.category).posts.recent.limit(5) %>
         <% if posts.any? %>
           <% posts.each do |post| %>
             <li><%= link_to post.title, post %></li>
@@ -35,7 +35,7 @@
   </div>
   <% end -%>
 
-  <!--开设中心-->
+  <!--开设中心
   <div class="kszx">
     <div class="sidebar_title">
       <span class="sidebar_cyan">IDD疗法国内覆盖地区</span>
@@ -48,5 +48,5 @@
       </ul>
     </div>
   </div>
-  <!--开设中心结束-->
+  开设中心结束-->
 </div>
