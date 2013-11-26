@@ -117,10 +117,16 @@ a.list_img{ display:block; width:93px; height:70px; border:1px solid #ccc; overf
 .zixun li a.artd_zxzx:hover{ background:url(asset-path('zxzx.jpg',image)) no-repeat 0 0;}
 .zixun li a.artd_tele:hover{ background:url(asset-path('dianhua.jpg',image)) no-repeat 0 0;}
 /*上一篇、下一篇*/
-.shangxia{ width:624px; height:30px; padding:30px 0px 10px 20px; overflow:hidden; line-height:30px;}
-.shangxia li{ width:220px; padding:0px 10px; height:30px; float:left; overflow:hidden; font-size:14px; font-family:Arial, Helvetica, sans-serif; color:#1F2D62; font-weight:bold;}
+.shangxia1{ width:400px; height:30px; padding:30px 0px 10px 20px; overflow:hidden; line-height:30px;white-space:nowrap;}
+.shangxia1 li{ width:180px; padding:0px 10px; height:30px; overflow:hidden; font-size:14px; font-family:Arial, Helvetica, sans-serif; color:#1F2D62; font-weight:bold;}
+.shangxia1 li b{ font-weight:normal;}
+.shangxia1 li a{ font-size:14px; font-family:Arial, Helvetica, sans-serif; color:#49b5e3; font-weight:normal;}
+/*上一篇、下一篇 长*/
+.shangxia{ width:624px; height:30px; padding:30px 0px 10px 20px; overflow:hidden; line-height:30px;white-space:nowrap;}
+.shangxia li{ width:220px; padding:0px 10px; height:30px; overflow:hidden; font-size:14px; font-family:Arial, Helvetica, sans-serif; color:#1F2D62; font-weight:bold;}
 .shangxia li b{ font-weight:normal;}
 .shangxia li a{ font-size:14px; font-family:Arial, Helvetica, sans-serif; color:#49b5e3; font-weight:normal;}
+
 /*视频中心*/
 .kfzl_sp{ width:640px; height:auto; overflow:hidden;}
 .kfzl_con{ width:201px; height:180px; overflow:hidden; margin-right:10px; overflow:hidden; float:left; position:relative;}

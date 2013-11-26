@@ -29,6 +29,6 @@ document.getElementById("bdlike_shell").src="http://bdimg.share.baidu.com/static
 </div>
 
 <ul class="shangxia">
-  <li>上一篇： <%= @video.older ? link_to(@video.older, @video.older) : '没有了'  %> </li>
-  <li>下一篇： <%= @video.newer ? link_to(@video.newer, @video.newer) : '没有了'  %> </li>
+  <li class="l">上一篇： <%= @video.older ? link_to(@video.older, @video.older) : '没有了'  %> </li>
+  <li class="r">下一篇： <%= @video.newer ? link_to(@video.newer, @video.newer) : '没有了'  %> </li>
 </ul>

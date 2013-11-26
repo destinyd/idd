@@ -8,6 +8,6 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     Page.update_counters @post.id, visits: 1
     add_crumb(@post.category, category_path(@post.category)) if @post.category
-    add_crumb @post.to_s
+    add_crumb @post.title.try(:block, 20)
   end
 end
