@@ -2,7 +2,7 @@
   <h1><%= @post.title %></h1>
   <div class="article_detail1"><b>来源：<%= t('site_title') %></b><b>发布时间：<%= (@post.published_at || @post.created_at).try(:cc_time) %></b><b>访问量量：<%= @post.visits %></b></div>
   <span class="daodu1">
-    <%= image_tag "daodu1.png", alt: '导读' %>
+    <%= image_tag "daodu2.png", alt: '导读' %>
   </span>
   <p class="wzdao"><%= @post.introduction || @post.content.block(150) %></p>
   <div class="wz_content1">
