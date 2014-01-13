@@ -35,3 +35,6 @@ end
     Sidebar.where(category_name: category_name, name: sidebar).first_or_create
   end
 end
+
+Option.where(name: 'english').first_or_create(value: 'false')
+Option.where(name: 'wangqiao').first_or_create(value: 'false')

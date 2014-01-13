@@ -50,7 +50,9 @@
         <td width="630" valign="top">
           <div style="height: 19px;" id="mid-top">
             <span class="english_link r">
-              <a href="http://www.iddtherapy.com/">English</a>
+              <% if Option.where(name: 'english').first.try(:value) == 'true'  %>
+                <a href="http://www.iddtherapy.com/">English</a>
+              <% end -%>
             </span>
             &nbsp;
           </div>
