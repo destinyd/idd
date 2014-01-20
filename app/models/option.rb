@@ -6,6 +6,10 @@ class Option
   validates :name, presence: true, uniqueness: true
   validates :value, presence: true
 
+  def is_boolean?
+    ['true', 'false'].include? value
+  end
+
   def is_true?
     value == 'true'
   end
