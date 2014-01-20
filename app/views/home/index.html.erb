@@ -12,11 +12,20 @@
       <strong>有关IDD疗法的介绍</strong>
       <%= image_tag "Line.jpg" %>
     </p>
-    <p><a title="IDD Therapy Patient Brochure" href="images/pdfs/iddpatientbrochure.pdf" target="_blank"><%= image_tag "brochureCover.png" %></a><br>
-      <br>下载PDF格式的IDD疗法介绍手册<br>
-      <a href="images/pdfs/iddpatientbrochure.pdf">点击这里</a><br>
-      <br>
-      <%= image_tag "Line.jpg" %>
+    <% @pdf = Pdf.recent.first %>
+    <p>
+      <% if @pdf %>
+        <%= link_to @pdf.pdf.url do %>
+          <%= image_tag "brochureCover.png" %>
+        <% end -%>
+        <br>
+        <br>下载PDF格式的IDD疗法介绍手册<br>
+        <%= link_to '点击这里', @pdf.pdf.url %>
+        <br>
+        <%= image_tag "Line.jpg" %>
+      <% else %>
+        <p> 请先在后台上传PDF 才能正常显示 </p>
+      <% end -%>
     </p>
   </div>
   <div class="clearfix"></div>

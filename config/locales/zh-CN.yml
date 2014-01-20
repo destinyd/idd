@@ -199,6 +199,7 @@ zh-CN:
       wine_monitor: 酒价监视器
       website: 网站
       option: 网站设置
+      pdf: 首页pdf
     attributes:
       post:
         image: 列表配图
